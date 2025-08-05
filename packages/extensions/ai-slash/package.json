@@ -1,0 +1,80 @@
+{
+  "name": "@blocknote/extension-ai-slash",
+  "homepage": "https://github.com/TypeCellOS/BlockNote",
+  "private": false,
+  "sideEffects": [
+    "*.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TypeCellOS/BlockNote.git",
+    "directory": "packages/extensions/ai-slash"
+  },
+  "license": "MIT",
+  "version": "0.1.0",
+  "files": [
+    "dist",
+    "types",
+    "src"
+  ],
+  "keywords": [
+    "react",
+    "javascript",
+    "editor",
+    "typescript",
+    "prosemirror",
+    "wysiwyg",
+    "rich-text-editor",
+    "notion",
+    "block-based",
+    "ai",
+    "slash-commands"
+  ],
+  "description": "AI-powered slash commands extension for BlockNote editor",
+  "type": "module",
+  "source": "src/index.ts",
+  "types": "./types/src/index.d.ts",
+  "main": "./dist/ai-slash.cjs",
+  "module": "./dist/ai-slash.js",
+  "exports": {
+    ".": {
+      "types": "./types/src/index.d.ts",
+      "import": "./dist/ai-slash.js",
+      "require": "./dist/ai-slash.cjs"
+    },
+    "./theme.css": {
+      "import": "./dist/theme.css",
+      "require": "./dist/theme.css",
+      "style": "./dist/theme.css"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --max-warnings 0",
+    "test": "vitest --run",
+    "test-watch": "vitest watch",
+    "clean": "rimraf dist && rimraf types"
+  },
+  "dependencies": {
+    "@blocknote/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "eslint": "^8.10.0",
+    "react": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.3.4",
+    "vitest": "^2.0.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "../../.eslintrc.json"
+    ]
+  }
+} 

@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@headlessui/react': ^2.2.4
-
 importers:
 
   .:
@@ -52,7 +49,7 @@ importers:
         version: 5.8.2
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
       wait-on:
         specifier: 8.0.3
         version: 8.0.3
@@ -85,28 +82,28 @@ importers:
         version: 3.775.0
       '@blocknote/code-block':
         specifier: latest
-        version: link:../packages/code-block
+        version: 0.35.0(@blocknote/core@packages+core)
       '@blocknote/server-util':
         specifier: latest
-        version: link:../packages/server-util
+        version: 0.35.0(@hocuspocus/provider@2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27))(canvas@2.11.2(encoding@0.1.13))(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-ai':
         specifier: latest
-        version: link:../packages/xl-ai
+        version: 0.35.0(@hocuspocus/provider@2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27))(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(@types/react@19.1.8)(immer@10.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)(zod@3.25.76)
       '@blocknote/xl-docx-exporter':
         specifier: latest
-        version: link:../packages/xl-docx-exporter
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-email-exporter':
         specifier: latest
-        version: link:../packages/xl-email-exporter
+        version: 0.35.0(@babel/core@7.26.10)(@hocuspocus/provider@2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27))(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-multi-column':
         specifier: latest
-        version: link:../packages/xl-multi-column
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-odt-exporter':
         specifier: latest
-        version: link:../packages/xl-odt-exporter
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-pdf-exporter':
         specifier: latest
-        version: link:../packages/xl-pdf-exporter
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@emotion/react':
         specifier: ^11.11.4
         version: 11.14.0(@types/react@19.1.8)(react@19.1.0)
@@ -117,8 +114,8 @@ importers:
         specifier: 1.3.0
         version: 1.3.0(acorn@8.14.1)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       '@headlessui/react':
-        specifier: ^2.2.4
-        version: 2.2.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: ^1.7.19
+        version: 1.7.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@heroicons/react':
         specifier: ^2.2.0
         version: 2.2.0(react@19.1.0)
@@ -130,7 +127,7 @@ importers:
         version: 2.23.1(react@19.1.0)
       '@liveblocks/react-blocknote':
         specifier: ^2.23.1
-        version: 2.23.1(f10828e27877aec50e973aadeaacf7c8)
+        version: 2.23.1(6a7ekvnvuwj4tny5dcslfrndqy)
       '@liveblocks/react-tiptap':
         specifier: ^2.23.1
         version: 2.23.1(@tiptap/extension-collaboration-cursor@2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(y-prosemirror@1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)))(@tiptap/extension-collaboration@2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)(y-prosemirror@1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)))(@tiptap/pm@2.12.0)(@tiptap/react@2.12.0(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@tiptap/suggestion@2.11.7(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0))(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(y-protocols@1.0.6(yjs@13.6.27))
@@ -256,7 +253,7 @@ importers:
         version: 2.1.0
       fumadocs-mdx:
         specifier: ^11.6.9
-        version: 11.6.10(@fumadocs/mdx-remote@1.3.0(acorn@8.14.1)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(acorn@8.14.1)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@6.3.5(@types/node@22.15.2)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.19.3)(yaml@2.7.0))
+        version: 11.6.10(@fumadocs/mdx-remote@1.3.0(acorn@8.14.1)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(acorn@8.14.1)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@6.3.5(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
       fumadocs-twoslash:
         specifier: ^3.1.4
         version: 3.1.4(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(fumadocs-ui@15.6.3(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@4.1.11))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
@@ -392,19 +389,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -429,19 +426,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -466,22 +463,22 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-multi-column':
         specifier: latest
-        version: link:../../../packages/xl-multi-column
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -506,19 +503,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -543,19 +540,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -580,19 +577,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -617,19 +614,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -654,19 +651,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -691,19 +688,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -728,19 +725,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -765,19 +762,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -802,19 +799,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -839,19 +836,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -876,19 +873,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -913,19 +910,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -950,19 +947,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -993,19 +990,19 @@ importers:
         version: 3.775.0
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1030,22 +1027,22 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/server-util':
         specifier: latest
-        version: link:../../../packages/server-util
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@types/hast@3.0.4)(canvas@2.11.2)(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1070,19 +1067,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1107,19 +1104,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1144,19 +1141,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@mantine/core':
         specifier: ^7.17.3
         version: 7.17.3(@mantine/hooks@7.17.3(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -1187,19 +1184,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1227,19 +1224,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1267,19 +1264,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1307,19 +1304,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1344,19 +1341,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1381,19 +1378,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1418,19 +1415,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1455,19 +1452,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@uppy/core':
         specifier: ^3.13.1
         version: 3.13.1
@@ -1528,19 +1525,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1565,19 +1562,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@emotion/react':
         specifier: ^11.11.4
         version: 11.14.0(@types/react@19.1.8)(react@19.1.0)
@@ -1614,19 +1611,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1651,19 +1648,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1688,19 +1685,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1725,19 +1722,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1762,19 +1759,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1799,19 +1796,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1836,19 +1833,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1873,19 +1870,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1910,22 +1907,22 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/code-block':
         specifier: latest
-        version: link:../../../packages/code-block
+        version: 0.35.0(@blocknote/core@0.35.0(@hocuspocus/provider@2.15.2)(@types/hast@3.0.4))
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1950,22 +1947,22 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/code-block':
         specifier: latest
-        version: link:../../../packages/code-block
+        version: 0.35.0(@blocknote/core@0.35.0(@hocuspocus/provider@2.15.2)(@types/hast@3.0.4))
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@shikijs/core':
         specifier: ^3.2.1
         version: 3.2.1
@@ -2005,19 +2002,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2042,19 +2039,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2079,19 +2076,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2116,19 +2113,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2153,25 +2150,25 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-multi-column':
         specifier: latest
-        version: link:../../../packages/xl-multi-column
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-pdf-exporter':
         specifier: latest
-        version: link:../../../packages/xl-pdf-exporter
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@react-pdf/renderer':
         specifier: ^4.3.0
         version: 4.3.0(react@19.1.0)
@@ -2199,25 +2196,25 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-docx-exporter':
         specifier: latest
-        version: link:../../../packages/xl-docx-exporter
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-multi-column':
         specifier: latest
-        version: link:../../../packages/xl-multi-column
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       docx:
         specifier: ^9.0.2
         version: 9.3.0
@@ -2245,25 +2242,25 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-multi-column':
         specifier: latest
-        version: link:../../../packages/xl-multi-column
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-odt-exporter':
         specifier: latest
-        version: link:../../../packages/xl-odt-exporter
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2288,22 +2285,22 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-email-exporter':
         specifier: latest
-        version: link:../../../packages/xl-email-exporter
+        version: 0.35.0(@babel/core@7.26.10)(@hocuspocus/provider@2.15.2)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@react-email/render':
         specifier: ^1.1.2
         version: 1.1.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -2331,19 +2328,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@mantine/core':
         specifier: ^7.17.3
         version: 7.17.3(@mantine/hooks@7.17.3(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -2374,19 +2371,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2411,19 +2408,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2451,19 +2448,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@mantine/core':
         specifier: ^7.17.3
         version: 7.17.3(@mantine/hooks@7.17.3(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -2494,19 +2491,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@mantine/core':
         specifier: ^7.17.3
         version: 7.17.3(@mantine/hooks@7.17.3(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -2537,19 +2534,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2574,19 +2571,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2611,19 +2608,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2648,19 +2645,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2685,19 +2682,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2722,19 +2719,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2765,19 +2762,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@liveblocks/client':
         specifier: ^2.23.1
         version: 2.23.1
@@ -2786,7 +2783,7 @@ importers:
         version: 2.23.1(react@19.1.0)
       '@liveblocks/react-blocknote':
         specifier: ^2.23.1
-        version: 2.23.1(f10828e27877aec50e973aadeaacf7c8)
+        version: 2.23.1(n2my3ra2dvbtkkwrgn75klozv4)
       '@liveblocks/react-tiptap':
         specifier: ^2.23.1
         version: 2.23.1(@tiptap/extension-collaboration-cursor@2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(y-prosemirror@1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)))(@tiptap/extension-collaboration@2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)(y-prosemirror@1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)))(@tiptap/pm@2.12.0)(@tiptap/react@2.12.0(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@tiptap/suggestion@2.11.7(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0))(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(y-protocols@1.0.6(yjs@13.6.27))
@@ -2820,19 +2817,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@y-sweet/react':
         specifier: ^0.6.3
         version: 0.6.4(react@19.1.0)(yjs@13.6.27)
@@ -2860,19 +2857,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@mantine/core':
         specifier: ^7.10.1
         version: 7.17.3(@mantine/hooks@7.17.3(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -2903,19 +2900,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@mantine/core':
         specifier: ^7.10.1
         version: 7.17.3(@mantine/hooks@7.17.3(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -2946,19 +2943,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -2989,19 +2986,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -3032,19 +3029,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@tiptap/core':
         specifier: ^2.12.0
         version: 2.12.0(@tiptap/pm@2.12.0)
@@ -3075,22 +3072,22 @@ importers:
         version: 1.2.9(zod@3.25.76)
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-ai':
         specifier: latest
-        version: link:../../../packages/xl-ai
+        version: 0.35.0(@hocuspocus/provider@2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27))(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(@types/react@19.1.8)(immer@10.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)(zod@3.25.76)
       '@mantine/core':
         specifier: ^7.17.3
         version: 7.17.3(@mantine/hooks@7.17.3(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -3142,22 +3139,22 @@ importers:
         version: 0.2.14(zod@3.25.76)
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-ai':
         specifier: latest
-        version: link:../../../packages/xl-ai
+        version: 0.35.0(@hocuspocus/provider@2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27))(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(@types/react@19.1.8)(immer@10.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)(zod@3.25.76)
       '@mantine/core':
         specifier: ^7.17.3
         version: 7.17.3(@mantine/hooks@7.17.3(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -3197,22 +3194,22 @@ importers:
         version: 1.3.22(zod@3.25.76)
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-ai':
         specifier: latest
-        version: link:../../../packages/xl-ai
+        version: 0.35.0(@hocuspocus/provider@2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27))(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(@types/react@19.1.8)(immer@10.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)(zod@3.25.76)
       '@mantine/core':
         specifier: ^7.17.3
         version: 7.17.3(@mantine/hooks@7.17.3(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -3252,22 +3249,22 @@ importers:
         version: 1.2.9(zod@3.25.76)
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-ai':
         specifier: latest
-        version: link:../../../packages/xl-ai
+        version: 0.35.0(@hocuspocus/provider@2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27))(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(@types/react@19.1.8)(immer@10.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)(zod@3.25.76)
       '@mantine/core':
         specifier: ^7.17.3
         version: 7.17.3(@mantine/hooks@7.17.3(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -3307,19 +3304,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -3344,19 +3341,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -3381,19 +3378,19 @@ importers:
     dependencies:
       '@blocknote/ariakit':
         specifier: latest
-        version: link:../../../packages/ariakit
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: latest
-        version: link:../../../packages/core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: latest
-        version: link:../../../packages/mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/react':
         specifier: latest
-        version: link:../../../packages/react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/shadcn':
         specifier: latest
-        version: link:../../../packages/shadcn
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -3421,10 +3418,10 @@ importers:
         version: 0.4.15(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/core':
         specifier: 0.35.0
-        version: link:../core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/react':
         specifier: 0.35.0
-        version: link:../react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@types/react':
         specifier: ^19.1.0
@@ -3467,7 +3464,7 @@ importers:
     dependencies:
       '@blocknote/core':
         specifier: 0.35.0
-        version: link:../core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@shikijs/core':
         specifier: ^3.2.1
         version: 3.2.1
@@ -3504,7 +3501,7 @@ importers:
         version: 1.8.1(eslint@8.57.1)(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
 
   packages/core:
     dependencies:
@@ -3643,7 +3640,7 @@ importers:
         version: 8.57.1
       jsdom:
         specifier: ^25.0.1
-        version: 25.0.1(canvas@2.11.2(encoding@0.1.13))
+        version: 25.0.1(canvas@2.11.2)
       rimraf:
         specifier: ^5.0.5
         version: 5.0.10
@@ -3661,7 +3658,7 @@ importers:
         version: 1.8.1(eslint@8.57.1)(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
 
   packages/dev-scripts:
     dependencies:
@@ -3701,10 +3698,10 @@ importers:
     dependencies:
       '@blocknote/core':
         specifier: 0.35.0
-        version: link:../core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/react':
         specifier: 0.35.0
-        version: link:../react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@mantine/core':
         specifier: ^7.17.3
         version: 7.17.3(@mantine/hooks@7.17.3(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -3759,7 +3756,7 @@ importers:
     dependencies:
       '@blocknote/core':
         specifier: 0.35.0
-        version: link:../core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@emoji-mart/data':
         specifier: ^1.2.1
         version: 1.2.1
@@ -3835,16 +3832,16 @@ importers:
         version: 0.8.0(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
 
   packages/server-util:
     dependencies:
       '@blocknote/core':
         specifier: 0.35.0
-        version: link:../core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/react':
         specifier: 0.35.0
-        version: link:../react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@tiptap/core':
         specifier: ^2.12.0
         version: 2.12.0(@tiptap/pm@2.12.0)
@@ -3853,7 +3850,7 @@ importers:
         version: 2.12.0
       jsdom:
         specifier: ^25.0.1
-        version: 25.0.1(canvas@2.11.2(encoding@0.1.13))
+        version: 25.0.1(canvas@2.11.2)
       y-prosemirror:
         specifier: ^1.3.4
         version: 1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)
@@ -3896,16 +3893,16 @@ importers:
         version: 1.8.1(eslint@8.57.1)(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
 
   packages/shadcn:
     dependencies:
       '@blocknote/core':
         specifier: 0.35.0
-        version: link:../core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/react':
         specifier: 0.35.0
-        version: link:../react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@hookform/resolvers':
         specifier: ^3.6.0
         version: 3.10.0(react-hook-form@7.54.2(react@19.1.0))
@@ -4014,16 +4011,16 @@ importers:
     dependencies:
       '@blocknote/core':
         specifier: 0.35.0
-        version: link:../core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/mantine':
         specifier: 0.35.0
-        version: link:../mantine
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/prosemirror-suggest-changes':
         specifier: ^0.1.3
         version: 0.1.3(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-transform@1.10.4)(prosemirror-view@1.38.1)
       '@blocknote/react':
         specifier: 0.35.0
-        version: link:../react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@floating-ui/react':
         specifier: ^0.26.4
         version: 0.26.28(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -4162,7 +4159,7 @@ importers:
         version: 0.8.0(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
 
   packages/xl-ai-server:
     dependencies:
@@ -4202,16 +4199,16 @@ importers:
         version: 0.8.0(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
 
   packages/xl-docx-exporter:
     dependencies:
       '@blocknote/core':
         specifier: 0.35.0
-        version: link:../core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/xl-multi-column':
         specifier: 0.35.0
-        version: link:../xl-multi-column
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       buffer:
         specifier: ^6.0.3
         version: 6.0.3
@@ -4254,7 +4251,7 @@ importers:
         version: 1.8.1(eslint@8.57.1)(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
       xml-formatter:
         specifier: ^3.6.3
         version: 3.6.5
@@ -4263,10 +4260,10 @@ importers:
     dependencies:
       '@blocknote/core':
         specifier: 0.35.0
-        version: link:../core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/react':
         specifier: 0.35.0
-        version: link:../react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@react-email/components':
         specifier: ^0.1.0
         version: 0.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -4312,16 +4309,16 @@ importers:
         version: 1.8.1(eslint@8.57.1)(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
 
   packages/xl-multi-column:
     dependencies:
       '@blocknote/core':
         specifier: 0.35.0
-        version: link:../core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/react':
         specifier: 0.35.0
-        version: link:../react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@tiptap/core':
         specifier: ^2.12.0
         version: 2.12.0(@tiptap/pm@2.12.0)
@@ -4358,7 +4355,7 @@ importers:
         version: 8.57.1
       jsdom:
         specifier: ^21.1.0
-        version: 21.1.2(canvas@2.11.2(encoding@0.1.13))
+        version: 21.1.2(canvas@2.11.2)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -4382,16 +4379,16 @@ importers:
         version: 1.8.1(eslint@8.57.1)(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@21.1.2(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@21.1.2(canvas@2.11.2))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
 
   packages/xl-odt-exporter:
     dependencies:
       '@blocknote/core':
         specifier: 0.35.0
-        version: link:../core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/xl-multi-column':
         specifier: 0.35.0
-        version: link:../xl-multi-column
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@zip.js/zip.js':
         specifier: ^2.7.57
         version: 2.7.57
@@ -4431,7 +4428,7 @@ importers:
         version: 1.8.1(eslint@8.57.1)(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
       xml-formatter:
         specifier: ^3.6.3
         version: 3.6.5
@@ -4440,13 +4437,13 @@ importers:
     dependencies:
       '@blocknote/core':
         specifier: 0.35.0
-        version: link:../core
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
       '@blocknote/react':
         specifier: 0.35.0
-        version: link:../react
+        version: 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@blocknote/xl-multi-column':
         specifier: 0.35.0
-        version: link:../xl-multi-column
+        version: 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@react-pdf/renderer':
         specifier: ^4.3.0
         version: 4.3.0(react@19.1.0)
@@ -4504,7 +4501,7 @@ importers:
         version: 1.8.1(eslint@8.57.1)(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+        version: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
 
   playground:
     dependencies:
@@ -4585,7 +4582,7 @@ importers:
         version: 2.23.1(react@19.1.0)
       '@liveblocks/react-blocknote':
         specifier: ^2.23.1
-        version: 2.23.1(f10828e27877aec50e973aadeaacf7c8)
+        version: 2.23.1(6a7ekvnvuwj4tny5dcslfrndqy)
       '@liveblocks/react-tiptap':
         specifier: ^2.23.1
         version: 2.23.1(@tiptap/extension-collaboration-cursor@2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(y-prosemirror@1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)))(@tiptap/extension-collaboration@2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)(y-prosemirror@1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)))(@tiptap/pm@2.12.0)(@tiptap/react@2.12.0(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@tiptap/suggestion@2.11.7(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0))(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(y-protocols@1.0.6(yjs@13.6.27))
@@ -4779,7 +4776,7 @@ importers:
         version: 1.8.1(eslint@8.57.1)(vite@5.4.15(@types/node@20.17.28)(lightningcss@1.30.1)(terser@5.43.1))
       vitest:
         specifier: ^2.0.3
-        version: 2.1.9(@types/node@20.17.28)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@20.17.28)(typescript@5.8.3))(terser@5.43.1)
+        version: 2.1.9(@types/node@20.17.28)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@20.17.28)(typescript@5.8.2))(terser@5.43.1)
 
 packages:
 
@@ -5708,6 +5705,31 @@ packages:
   '@better-fetch/fetch@1.1.18':
     resolution: {integrity: sha512-rEFOE1MYIsBmoMJtQbl32PGHHXuG2hDxvEd7rUHE0vCBoFQVSDqaVs9hkZEtHCxRoY+CljXKFCOuJ8uxqw1LcA==}
 
+  '@blocknote/ariakit@0.35.0':
+    resolution: {integrity: sha512-f3ioe+PNnuB/9Kcary1IcGQzTamis4nk/3E/8GukYG8rAA7yIHTNnHv2gld/rmXkEft4Zkl9T4BmunabRoAGew==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || >= 19.0.0-rc
+      react-dom: ^18.0 || ^19.0 || >= 19.0.0-rc
+
+  '@blocknote/code-block@0.35.0':
+    resolution: {integrity: sha512-qQJaTbLFcs9E2DuDC2GmF7c1XLLzv5w0zsqbrz1k87NvsXM6wB9grwTexaH6ycMj8S9ZmZmBcGKHqxy8Tu0Igw==}
+    peerDependencies:
+      '@blocknote/core': ^0.35.0
+
+  '@blocknote/core@0.35.0':
+    resolution: {integrity: sha512-Pn0DZHIU0fgKw8Cw4s7dspRXML6jZn3a0CUKnXOTsDEuJBoPrvFmQEPGb/OpFDfvCh5YftKoQYUAsiy1HJYN7A==}
+    peerDependencies:
+      '@hocuspocus/provider': ^2.15.2
+    peerDependenciesMeta:
+      '@hocuspocus/provider':
+        optional: true
+
+  '@blocknote/mantine@0.35.0':
+    resolution: {integrity: sha512-Ao8Z2d84MQIuVRVobymYYyayFkYxtRW3L3XGNMqBPtezX0qsRivUGCmmRoBmbjbcJ2EqtGOVpTEU8jecYUZe5g==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || >= 19.0.0-rc
+      react-dom: ^18.0 || ^19.0 || >= 19.0.0-rc
+
   '@blocknote/prosemirror-suggest-changes@0.1.3':
     resolution: {integrity: sha512-g/RxkStEg67bGiujK092aabD6tA/O4jI9jwKAnasP+t00khgyBBIXIvp7K7QT+gjVB6kP+ez27669iiJy8MZ5w==}
     peerDependencies:
@@ -5715,6 +5737,60 @@ packages:
       prosemirror-state: ^1.0.0
       prosemirror-transform: ^1.0.0
       prosemirror-view: ^1.0.0
+
+  '@blocknote/react@0.35.0':
+    resolution: {integrity: sha512-SZqbVUmPGIBoqv/oCDN8LKGdDY04A+BlXptHAojeH5UY6gH7N6/kRTNvzZ9OIrCKlCHbRGK+8eiHjSTBFRAXUQ==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || >= 19.0.0-rc
+      react-dom: ^18.0 || ^19.0 || >= 19.0.0-rc
+
+  '@blocknote/server-util@0.35.0':
+    resolution: {integrity: sha512-r0vt5k8LxvX+W3BaAcUBjiInnPHRB008P9gNbt6ZL85KTTAqJ/zIq0Ylm6H3Ho79eQfaDA4fxIiD2E6w0dX1eA==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || >= 19.0.0-rc
+      react-dom: ^18.0 || ^19.0 || >= 19.0.0-rc
+
+  '@blocknote/shadcn@0.35.0':
+    resolution: {integrity: sha512-43XGrPTqb6dXORPkgV04zUBrMrxrQIeMVyuWeXzeUyShoOnEkdm2I1/1/B4bvGVHKoTypPYCrbi3d72xkDFMxw==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || >= 19.0.0-rc
+      react-dom: ^18.0 || ^19.0 || >= 19.0.0-rc
+
+  '@blocknote/xl-ai@0.35.0':
+    resolution: {integrity: sha512-mU2dj5ybYKe/izExNrnXVGmPLEpQXxdkXaUP1qsN3WzBqylqpJU5TQkfPoQY4DohfsTRjCCmDR8KPdGQ3I1u3g==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || >= 19.0.0-rc
+      react-dom: ^18.0 || ^19.0 || >= 19.0.0-rc
+
+  '@blocknote/xl-docx-exporter@0.35.0':
+    resolution: {integrity: sha512-vDmPxXPXppuOAJrksgmL2RhCCklO+nrSCfc2+8b/wQBq8U9+vUshpk2FgeJhhYdXcjD8B/ZsH+TdVDGgEFr74A==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || >= 19.0.0-rc
+      react-dom: ^18.0 || ^19.0 || >= 19.0.0-rc
+
+  '@blocknote/xl-email-exporter@0.35.0':
+    resolution: {integrity: sha512-oSnIdnfhX8rclAEqNFAqmM2Kxqd47qUZ+VTUPqkiobeTj8Bux1P9ZDSDoIzual8xz4DaDFmdRMdWW96d5fN+8g==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || >= 19.0.0-rc
+      react-dom: ^18.0 || ^19.0 || >= 19.0.0-rc
+
+  '@blocknote/xl-multi-column@0.35.0':
+    resolution: {integrity: sha512-ZES58sJin73hz+9i2TSIWSukzlYSK5Ub3lMVQS9YoBiPGq5W0eVIa6zO1RRtM2AUaW9YVwinl6rKXguxRPtzDw==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || >= 19.0.0-rc
+      react-dom: ^18.0 || ^19.0 || >= 19.0.0-rc
+
+  '@blocknote/xl-odt-exporter@0.35.0':
+    resolution: {integrity: sha512-lmYiveQjzx0H+Se9znOhrcV6CLahqnnGu9699W4tiSS5Jj0JnbtbQ9NfQz0Kmw8OH1QcddRwl7lCpd9RwvqgUA==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || >= 19.0.0-rc
+      react-dom: ^18.0 || ^19.0 || >= 19.0.0-rc
+
+  '@blocknote/xl-pdf-exporter@0.35.0':
+    resolution: {integrity: sha512-gxOq3BKgfPO3EHVbag0YbHF3noQTWwEHGudbwI6OyE6DS5kM/s2gdqAsdgdF3HbS8GC2Y2zXaIsmsL07ZOXV1Q==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || >= 19.0.0-rc
+      react-dom: ^18.0 || ^19.0 || >= 19.0.0-rc
 
   '@bundled-es-modules/cookie@2.0.1':
     resolution: {integrity: sha512-8o+5fRPLNbjbdGRRmJj3h6Hh1AQJf2dk3qQ/5ZFb+PXkRNiSoMGGUKlsgLfrxneb72axVJyIYji64E2+nNfYyw==}
@@ -6370,12 +6446,12 @@ packages:
   '@hapi/topo@5.1.0':
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
 
-  '@headlessui/react@2.2.4':
-    resolution: {integrity: sha512-lz+OGcAH1dK93rgSMzXmm1qKOJkBUqZf1L4M8TWLNplftQD3IkoEDdUFNfAn4ylsN6WOTVtWaLmvmaHOUk1dTA==}
+  '@headlessui/react@1.7.19':
+    resolution: {integrity: sha512-Ll+8q3OlMJfJbAKM/+/Y2q6PPYbryqNTXDbryx7SXLIDamkF6iQFbriYHga0dY44PvDhvvBWCx1Xj4U5+G4hOw==}
     engines: {node: '>=10'}
     peerDependencies:
-      react: ^18 || ^19 || ^19.0.0-rc
-      react-dom: ^18 || ^19 || ^19.0.0-rc
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
 
   '@heroicons/react@2.2.0':
     resolution: {integrity: sha512-LMcepvRaS9LYHJGsF0zzmgKCUim/X3N/DQKc4jepAXJ7l8QxJ1PmxJzqplF2Z3FE4PqBAIGyJAQ/w4B5dsqbtQ==}
@@ -8053,30 +8129,6 @@ packages:
   '@radix-ui/rect@1.1.1':
     resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
 
-  '@react-aria/focus@3.20.5':
-    resolution: {integrity: sha512-JpFtXmWQ0Oca7FcvkqgjSyo6xEP7v3oQOLUId6o0xTvm4AD5W0mU2r3lYrbhsJ+XxdUUX4AVR5473sZZ85kU4A==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
-      react-dom: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
-
-  '@react-aria/interactions@3.25.3':
-    resolution: {integrity: sha512-J1bhlrNtjPS/fe5uJQ+0c7/jiXniwa4RQlP+Emjfc/iuqpW2RhbF9ou5vROcLzWIyaW8tVMZ468J68rAs/aZ5A==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
-      react-dom: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
-
-  '@react-aria/ssr@3.9.9':
-    resolution: {integrity: sha512-2P5thfjfPy/np18e5wD4WPt8ydNXhij1jwA8oehxZTFqlgVMGXzcWKxTb4RtJrLFsqPO7RUQTiY8QJk0M4Vy2g==}
-    engines: {node: '>= 12'}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
-
-  '@react-aria/utils@3.29.1':
-    resolution: {integrity: sha512-yXMFVJ73rbQ/yYE/49n5Uidjw7kh192WNN9PNQGV0Xoc7EJUlSOxqhnpHmYTyO0EotJ8fdM1fMH8durHjUSI8g==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
-      react-dom: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
-
   '@react-email/body@0.0.11':
     resolution: {integrity: sha512-ZSD2SxVSgUjHGrB0Wi+4tu3MEpB4fYSbezsFNEJk2xCWDBkFiOeEsjTmR5dvi+CxTK691hQTQlHv0XWuP7ENTg==}
     peerDependencies:
@@ -8293,19 +8345,6 @@ packages:
 
   '@react-pdf/types@2.9.0':
     resolution: {integrity: sha512-ckj80vZLlvl9oYrQ4tovEaqKWP3O06Eb1D48/jQWbdwz1Yh7Y9v1cEmwlP8ET+a1Whp8xfdM0xduMexkuPANCQ==}
-
-  '@react-stately/flags@3.1.2':
-    resolution: {integrity: sha512-2HjFcZx1MyQXoPqcBGALwWWmgFVUk2TuKVIQxCbRq7fPyWXIl6VHcakCLurdtYC2Iks7zizvz0Idv48MQ38DWg==}
-
-  '@react-stately/utils@3.10.7':
-    resolution: {integrity: sha512-cWvjGAocvy4abO9zbr6PW6taHgF24Mwy/LbQ4TC4Aq3tKdKDntxyD+sh7AkSRfJRT2ccMVaHVv2+FfHThd3PKQ==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
-
-  '@react-types/shared@3.30.0':
-    resolution: {integrity: sha512-COIazDAx1ncDg046cTJ8SFYsX8aS3lB/08LDnbkH/SkdYrFPWDlXMrO/sUam8j1WWM+PJ+4d1mj7tODIKNiFog==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
 
   '@remirror/core-constants@3.0.0':
     resolution: {integrity: sha512-42aWfPrimMfDKDi4YegyS7x+/0tlzaqwPQCULLanv3DMIlu96KTJR0fM5isWX2UViOqlGnX6YFgqWepcX+XMNg==}
@@ -16647,12 +16686,408 @@ snapshots:
 
   '@better-fetch/fetch@1.1.18': {}
 
+  '@blocknote/ariakit@0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@ariakit/react': 0.4.15(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/react': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+    transitivePeerDependencies:
+      - '@hocuspocus/provider'
+      - '@types/hast'
+      - highlight.js
+      - lowlight
+      - refractor
+      - sugar-high
+      - supports-color
+
+  '@blocknote/code-block@0.35.0(@blocknote/core@0.35.0(@hocuspocus/provider@2.15.2)(@types/hast@3.0.4))':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@shikijs/core': 3.7.0
+      '@shikijs/engine-javascript': 3.7.0
+      '@shikijs/langs': 3.7.0
+      '@shikijs/langs-precompiled': 3.2.1
+      '@shikijs/themes': 3.7.0
+      '@shikijs/types': 3.2.1
+
+  '@blocknote/code-block@0.35.0(@blocknote/core@packages+core)':
+    dependencies:
+      '@blocknote/core': link:packages/core
+      '@shikijs/core': 3.7.0
+      '@shikijs/engine-javascript': 3.7.0
+      '@shikijs/langs': 3.7.0
+      '@shikijs/langs-precompiled': 3.2.1
+      '@shikijs/themes': 3.7.0
+      '@shikijs/types': 3.2.1
+
+  '@blocknote/core@0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)':
+    dependencies:
+      '@emoji-mart/data': 1.2.1
+      '@shikijs/types': 3.2.1
+      '@tiptap/core': 2.12.0(@tiptap/pm@2.12.0)
+      '@tiptap/extension-bold': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))
+      '@tiptap/extension-code': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))
+      '@tiptap/extension-gapcursor': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)
+      '@tiptap/extension-history': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)
+      '@tiptap/extension-horizontal-rule': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)
+      '@tiptap/extension-italic': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))
+      '@tiptap/extension-link': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)
+      '@tiptap/extension-paragraph': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))
+      '@tiptap/extension-strike': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))
+      '@tiptap/extension-table-cell': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))
+      '@tiptap/extension-table-header': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))
+      '@tiptap/extension-text': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))
+      '@tiptap/extension-underline': 2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))
+      '@tiptap/pm': 2.12.0
+      emoji-mart: 5.6.0
+      hast-util-from-dom: 5.0.1
+      prosemirror-dropcursor: 1.8.2
+      prosemirror-highlight: 0.13.0(@shikijs/types@3.2.1)(@types/hast@3.0.4)(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-transform@1.10.4)(prosemirror-view@1.38.1)
+      prosemirror-model: 1.25.1
+      prosemirror-state: 1.4.3
+      prosemirror-tables: 1.6.4
+      prosemirror-transform: 1.10.4
+      prosemirror-view: 1.38.1
+      rehype-format: 5.0.1
+      rehype-parse: 9.0.1
+      rehype-remark: 10.0.0
+      rehype-stringify: 10.0.1
+      remark-gfm: 4.0.1
+      remark-parse: 11.0.0
+      remark-rehype: 11.1.2
+      remark-stringify: 11.0.0
+      unified: 11.0.5
+      uuid: 8.3.2
+      y-prosemirror: 1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)
+      y-protocols: 1.0.6(yjs@13.6.27)
+      yjs: 13.6.27
+    optionalDependencies:
+      '@hocuspocus/provider': 2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)
+    transitivePeerDependencies:
+      - '@types/hast'
+      - highlight.js
+      - lowlight
+      - refractor
+      - sugar-high
+      - supports-color
+
+  '@blocknote/mantine@0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/react': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@mantine/core': 7.17.3(@mantine/hooks@7.17.3(react@19.1.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@mantine/hooks': 7.17.3(react@19.1.0)
+      '@mantine/utils': 6.0.22(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      react-icons: 5.5.0(react@19.1.0)
+    transitivePeerDependencies:
+      - '@hocuspocus/provider'
+      - '@types/hast'
+      - '@types/react'
+      - highlight.js
+      - lowlight
+      - refractor
+      - sugar-high
+      - supports-color
+
   '@blocknote/prosemirror-suggest-changes@0.1.3(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-transform@1.10.4)(prosemirror-view@1.38.1)':
     dependencies:
       prosemirror-model: 1.25.1
       prosemirror-state: 1.4.3
       prosemirror-transform: 1.10.4
       prosemirror-view: 1.38.1
+
+  '@blocknote/react@0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@emoji-mart/data': 1.2.1
+      '@floating-ui/react': 0.26.28(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@tiptap/core': 2.12.0(@tiptap/pm@2.12.0)
+      '@tiptap/pm': 2.12.0
+      '@tiptap/react': 2.12.0(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      emoji-mart: 5.6.0
+      lodash.merge: 4.6.2
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      react-icons: 5.5.0(react@19.1.0)
+    transitivePeerDependencies:
+      - '@hocuspocus/provider'
+      - '@types/hast'
+      - highlight.js
+      - lowlight
+      - refractor
+      - sugar-high
+      - supports-color
+
+  '@blocknote/server-util@0.35.0(@hocuspocus/provider@2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27))(canvas@2.11.2(encoding@0.1.13))(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/react': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@tiptap/core': 2.12.0(@tiptap/pm@2.12.0)
+      '@tiptap/pm': 2.12.0
+      jsdom: 25.0.1(canvas@2.11.2(encoding@0.1.13))
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      y-prosemirror: 1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)
+      y-protocols: 1.0.6(yjs@13.6.27)
+      yjs: 13.6.27
+    transitivePeerDependencies:
+      - '@hocuspocus/provider'
+      - '@types/hast'
+      - bufferutil
+      - canvas
+      - highlight.js
+      - lowlight
+      - prosemirror-model
+      - prosemirror-state
+      - prosemirror-view
+      - refractor
+      - sugar-high
+      - supports-color
+      - utf-8-validate
+
+  '@blocknote/server-util@0.35.0(@hocuspocus/provider@2.15.2)(@types/hast@3.0.4)(canvas@2.11.2)(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/react': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@tiptap/core': 2.12.0(@tiptap/pm@2.12.0)
+      '@tiptap/pm': 2.12.0
+      jsdom: 25.0.1(canvas@2.11.2)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      y-prosemirror: 1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)
+      y-protocols: 1.0.6(yjs@13.6.27)
+      yjs: 13.6.27
+    transitivePeerDependencies:
+      - '@hocuspocus/provider'
+      - '@types/hast'
+      - bufferutil
+      - canvas
+      - highlight.js
+      - lowlight
+      - prosemirror-model
+      - prosemirror-state
+      - prosemirror-view
+      - refractor
+      - sugar-high
+      - supports-color
+      - utf-8-validate
+
+  '@blocknote/shadcn@0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/react': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@hookform/resolvers': 3.10.0(react-hook-form@7.54.2(react@19.1.0))
+      '@radix-ui/react-avatar': 1.1.3(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-dropdown-menu': 2.1.6(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-label': 2.1.2(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-popover': 1.1.14(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-select': 2.1.6(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-slot': 1.2.3(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-tabs': 1.1.12(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-toggle': 1.1.2(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-tooltip': 1.1.8(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      autoprefixer: 10.4.21(postcss@8.5.6)
+      class-variance-authority: 0.7.1
+      clsx: 2.1.1
+      lucide-react: 0.525.0(react@19.1.0)
+      postcss: 8.5.6
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      react-hook-form: 7.54.2(react@19.1.0)
+      tailwind-merge: 2.6.0
+      tailwindcss: 3.4.17
+      tailwindcss-animate: 1.0.7(tailwindcss@3.4.17)
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - '@hocuspocus/provider'
+      - '@types/hast'
+      - '@types/react'
+      - '@types/react-dom'
+      - highlight.js
+      - lowlight
+      - refractor
+      - sugar-high
+      - supports-color
+      - ts-node
+
+  '@blocknote/xl-ai@0.35.0(@hocuspocus/provider@2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27))(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(@types/react@19.1.8)(immer@10.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)(zod@3.25.76)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/mantine': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@blocknote/prosemirror-suggest-changes': 0.1.3(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-transform@1.10.4)(prosemirror-view@1.38.1)
+      '@blocknote/react': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@floating-ui/react': 0.26.28(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@tiptap/core': 2.12.0(@tiptap/pm@2.12.0)
+      ai: 4.3.15(react@19.1.0)(zod@3.25.76)
+      lodash.isequal: 4.5.0
+      prosemirror-changeset: 2.3.0
+      prosemirror-model: 1.25.1
+      prosemirror-state: 1.4.3
+      prosemirror-tables: 1.6.4
+      prosemirror-transform: 1.10.4
+      prosemirror-view: 1.38.1
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      react-icons: 5.5.0(react@19.1.0)
+      remark-parse: 10.0.2
+      remark-stringify: 10.0.3
+      unified: 10.1.2
+      y-prosemirror: 1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)
+      zustand: 5.0.3(@types/react@19.1.8)(immer@10.1.1)(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))
+    transitivePeerDependencies:
+      - '@hocuspocus/provider'
+      - '@tiptap/pm'
+      - '@types/hast'
+      - '@types/react'
+      - highlight.js
+      - immer
+      - lowlight
+      - refractor
+      - sugar-high
+      - supports-color
+      - use-sync-external-store
+      - y-protocols
+      - yjs
+      - zod
+
+  '@blocknote/xl-docx-exporter@0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/xl-multi-column': 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      buffer: 6.0.3
+      docx: 9.3.0
+      image-meta: 0.2.1
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+    transitivePeerDependencies:
+      - '@hocuspocus/provider'
+      - '@tiptap/pm'
+      - '@types/hast'
+      - highlight.js
+      - lowlight
+      - refractor
+      - sugar-high
+      - supports-color
+
+  '@blocknote/xl-email-exporter@0.35.0(@babel/core@7.26.10)(@hocuspocus/provider@2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27))(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/react': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@react-email/components': 0.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@react-email/render': 1.1.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      buffer: 6.0.3
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      react-email: 4.0.16(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@hocuspocus/provider'
+      - '@opentelemetry/api'
+      - '@playwright/test'
+      - '@types/hast'
+      - babel-plugin-macros
+      - babel-plugin-react-compiler
+      - bufferutil
+      - highlight.js
+      - lowlight
+      - refractor
+      - sass
+      - sugar-high
+      - supports-color
+      - utf-8-validate
+
+  '@blocknote/xl-email-exporter@0.35.0(@babel/core@7.26.10)(@hocuspocus/provider@2.15.2)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/react': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@react-email/components': 0.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@react-email/render': 1.1.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      buffer: 6.0.3
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      react-email: 4.0.16(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@hocuspocus/provider'
+      - '@opentelemetry/api'
+      - '@playwright/test'
+      - '@types/hast'
+      - babel-plugin-macros
+      - babel-plugin-react-compiler
+      - bufferutil
+      - highlight.js
+      - lowlight
+      - refractor
+      - sass
+      - sugar-high
+      - supports-color
+      - utf-8-validate
+
+  '@blocknote/xl-multi-column@0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/react': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@tiptap/core': 2.12.0(@tiptap/pm@2.12.0)
+      prosemirror-model: 1.25.1
+      prosemirror-state: 1.4.3
+      prosemirror-tables: 1.6.4
+      prosemirror-transform: 1.10.4
+      prosemirror-view: 1.38.1
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      react-icons: 5.5.0(react@19.1.0)
+    transitivePeerDependencies:
+      - '@hocuspocus/provider'
+      - '@tiptap/pm'
+      - '@types/hast'
+      - highlight.js
+      - lowlight
+      - refractor
+      - sugar-high
+      - supports-color
+
+  '@blocknote/xl-odt-exporter@0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/xl-multi-column': 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@zip.js/zip.js': 2.7.57
+      buffer: 6.0.3
+      image-meta: 0.2.1
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+    transitivePeerDependencies:
+      - '@hocuspocus/provider'
+      - '@tiptap/pm'
+      - '@types/hast'
+      - highlight.js
+      - lowlight
+      - refractor
+      - sugar-high
+      - supports-color
+
+  '@blocknote/xl-pdf-exporter@0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/react': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@blocknote/xl-multi-column': 0.35.0(@hocuspocus/provider@2.15.2)(@tiptap/pm@2.12.0)(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@react-pdf/renderer': 4.3.0(react@19.1.0)
+      buffer: 6.0.3
+      docx: 9.3.0
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+    transitivePeerDependencies:
+      - '@hocuspocus/provider'
+      - '@tiptap/pm'
+      - '@types/hast'
+      - highlight.js
+      - lowlight
+      - refractor
+      - sugar-high
+      - supports-color
 
   '@bundled-es-modules/cookie@2.0.1':
     dependencies:
@@ -17117,15 +17552,12 @@ snapshots:
     dependencies:
       '@hapi/hoek': 9.3.0
 
-  '@headlessui/react@2.2.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@headlessui/react@1.7.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
-      '@floating-ui/react': 0.26.28(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@react-aria/focus': 3.20.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@react-aria/interactions': 3.25.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@tanstack/react-virtual': 3.13.12(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      client-only: 0.0.1
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
-      use-sync-external-store: 1.5.0(react@19.1.0)
 
   '@heroicons/react@2.2.0(react@19.1.0)':
     dependencies:
@@ -17403,10 +17835,39 @@ snapshots:
 
   '@liveblocks/core@2.23.1': {}
 
-  '@liveblocks/react-blocknote@2.23.1(f10828e27877aec50e973aadeaacf7c8)':
+  '@liveblocks/react-blocknote@2.23.1(6a7ekvnvuwj4tny5dcslfrndqy)':
     dependencies:
       '@blocknote/core': link:packages/core
       '@blocknote/react': link:packages/react
+      '@liveblocks/client': 2.23.1
+      '@liveblocks/core': 2.23.1
+      '@liveblocks/react': 2.23.1(react@19.1.0)
+      '@liveblocks/react-tiptap': 2.23.1(@tiptap/extension-collaboration-cursor@2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(y-prosemirror@1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)))(@tiptap/extension-collaboration@2.11.5(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)(y-prosemirror@1.3.4(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)))(@tiptap/pm@2.12.0)(@tiptap/react@2.12.0(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@tiptap/suggestion@2.11.7(@tiptap/core@2.12.0(@tiptap/pm@2.12.0))(@tiptap/pm@2.12.0))(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(prosemirror-model@1.25.1)(prosemirror-state@1.4.3)(prosemirror-view@1.38.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(y-protocols@1.0.6(yjs@13.6.27))
+      '@liveblocks/react-ui': 2.23.1(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@liveblocks/yjs': 2.23.1(yjs@13.6.27)
+      '@tiptap/core': 2.12.0(@tiptap/pm@2.12.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      vitest-tsconfig-paths: 3.4.1
+    transitivePeerDependencies:
+      - '@tiptap/extension-collaboration'
+      - '@tiptap/extension-collaboration-cursor'
+      - '@tiptap/pm'
+      - '@tiptap/react'
+      - '@tiptap/suggestion'
+      - '@types/react'
+      - '@types/react-dom'
+      - prosemirror-model
+      - prosemirror-state
+      - prosemirror-view
+      - supports-color
+      - y-protocols
+      - yjs
+
+  '@liveblocks/react-blocknote@2.23.1(n2my3ra2dvbtkkwrgn75klozv4)':
+    dependencies:
+      '@blocknote/core': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)
+      '@blocknote/react': 0.35.0(@hocuspocus/provider@2.15.2(yjs@13.6.27))(@types/hast@3.0.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@liveblocks/client': 2.23.1
       '@liveblocks/core': 2.23.1
       '@liveblocks/react': 2.23.1(react@19.1.0)
@@ -18956,42 +19417,6 @@ snapshots:
 
   '@radix-ui/rect@1.1.1': {}
 
-  '@react-aria/focus@3.20.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
-    dependencies:
-      '@react-aria/interactions': 3.25.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@react-aria/utils': 3.29.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@react-types/shared': 3.30.0(react@19.1.0)
-      '@swc/helpers': 0.5.15
-      clsx: 2.1.1
-      react: 19.1.0
-      react-dom: 19.1.0(react@19.1.0)
-
-  '@react-aria/interactions@3.25.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
-    dependencies:
-      '@react-aria/ssr': 3.9.9(react@19.1.0)
-      '@react-aria/utils': 3.29.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@react-stately/flags': 3.1.2
-      '@react-types/shared': 3.30.0(react@19.1.0)
-      '@swc/helpers': 0.5.15
-      react: 19.1.0
-      react-dom: 19.1.0(react@19.1.0)
-
-  '@react-aria/ssr@3.9.9(react@19.1.0)':
-    dependencies:
-      '@swc/helpers': 0.5.15
-      react: 19.1.0
-
-  '@react-aria/utils@3.29.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
-    dependencies:
-      '@react-aria/ssr': 3.9.9(react@19.1.0)
-      '@react-stately/flags': 3.1.2
-      '@react-stately/utils': 3.10.7(react@19.1.0)
-      '@react-types/shared': 3.30.0(react@19.1.0)
-      '@swc/helpers': 0.5.15
-      clsx: 2.1.1
-      react: 19.1.0
-      react-dom: 19.1.0(react@19.1.0)
-
   '@react-email/body@0.0.11(react@19.1.0)':
     dependencies:
       react: 19.1.0
@@ -19264,19 +19689,6 @@ snapshots:
       '@react-pdf/font': 4.0.2
       '@react-pdf/primitives': 4.1.1
       '@react-pdf/stylesheet': 6.1.0
-
-  '@react-stately/flags@3.1.2':
-    dependencies:
-      '@swc/helpers': 0.5.15
-
-  '@react-stately/utils@3.10.7(react@19.1.0)':
-    dependencies:
-      '@swc/helpers': 0.5.15
-      react: 19.1.0
-
-  '@react-types/shared@3.30.0(react@19.1.0)':
-    dependencies:
-      react: 19.1.0
 
   '@remirror/core-constants@3.0.0': {}
 
@@ -20852,13 +21264,13 @@ snapshots:
       chai: 5.2.0
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.9(msw@2.7.3(@types/node@20.17.28)(typescript@5.8.3))(vite@5.4.15(@types/node@20.17.28)(lightningcss@1.30.1)(terser@5.43.1))':
+  '@vitest/mocker@2.1.9(msw@2.7.3(@types/node@20.17.28)(typescript@5.8.2))(vite@5.4.15(@types/node@20.17.28)(lightningcss@1.30.1)(terser@5.43.1))':
     dependencies:
       '@vitest/spy': 2.1.9
       estree-walker: 3.0.3
       magic-string: 0.30.17
     optionalDependencies:
-      msw: 2.7.3(@types/node@20.17.28)(typescript@5.8.3)
+      msw: 2.7.3(@types/node@20.17.28)(typescript@5.8.2)
       vite: 5.4.15(@types/node@20.17.28)(lightningcss@1.30.1)(terser@5.43.1)
 
   '@vitest/mocker@2.1.9(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))':
@@ -20898,7 +21310,7 @@ snapshots:
       sirv: 3.0.1
       tinyglobby: 0.2.12
       tinyrainbow: 1.2.0
-      vitest: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
+      vitest: 2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1)
 
   '@vitest/utils@2.1.9':
     dependencies:
@@ -22791,7 +23203,7 @@ snapshots:
       unist-util-visit: 5.0.0
       zod: 3.25.76
 
-  fumadocs-mdx@11.6.10(@fumadocs/mdx-remote@1.3.0(acorn@8.14.1)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(acorn@8.14.1)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@6.3.5(@types/node@22.15.2)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.19.3)(yaml@2.7.0)):
+  fumadocs-mdx@11.6.10(@fumadocs/mdx-remote@1.3.0(acorn@8.14.1)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(acorn@8.14.1)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(next@15.4.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@6.3.5(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1)):
     dependencies:
       '@mdx-js/mdx': 3.1.0(acorn@8.14.1)
       '@standard-schema/spec': 1.0.0
@@ -23692,7 +24104,7 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  jsdom@21.1.2(canvas@2.11.2(encoding@0.1.13)):
+  jsdom@21.1.2(canvas@2.11.2):
     dependencies:
       abab: 2.0.6
       acorn: 8.14.1
@@ -23728,6 +24140,36 @@ snapshots:
       - utf-8-validate
 
   jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)):
+    dependencies:
+      cssstyle: 4.3.0
+      data-urls: 5.0.0
+      decimal.js: 10.5.0
+      form-data: 4.0.2
+      html-encoding-sniffer: 4.0.0
+      http-proxy-agent: 7.0.2
+      https-proxy-agent: 7.0.6
+      is-potential-custom-element-name: 1.0.1
+      nwsapi: 2.2.19
+      parse5: 7.2.1
+      rrweb-cssom: 0.7.1
+      saxes: 6.0.0
+      symbol-tree: 3.2.4
+      tough-cookie: 5.1.2
+      w3c-xmlserializer: 5.0.0
+      webidl-conversions: 7.0.0
+      whatwg-encoding: 3.1.1
+      whatwg-mimetype: 4.0.0
+      whatwg-url: 14.2.0
+      ws: 8.18.1
+      xml-name-validator: 5.0.0
+    optionalDependencies:
+      canvas: 2.11.2(encoding@0.1.13)
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+
+  jsdom@25.0.1(canvas@2.11.2):
     dependencies:
       cssstyle: 4.3.0
       data-urls: 5.0.0
@@ -24728,7 +25170,7 @@ snapshots:
     dependencies:
       msw: 2.7.3(@types/node@22.15.2)(typescript@5.8.2)
 
-  msw@2.7.3(@types/node@20.17.28)(typescript@5.8.3):
+  msw@2.7.3(@types/node@20.17.28)(typescript@5.8.2):
     dependencies:
       '@bundled-es-modules/cookie': 2.0.1
       '@bundled-es-modules/statuses': 1.0.1
@@ -24749,7 +25191,7 @@ snapshots:
       type-fest: 4.38.0
       yargs: 17.7.2
     optionalDependencies:
-      typescript: 5.8.3
+      typescript: 5.8.2
     transitivePeerDependencies:
       - '@types/node'
     optional: true
@@ -27189,6 +27631,7 @@ snapshots:
   use-sync-external-store@1.5.0(react@19.1.0):
     dependencies:
       react: 19.1.0
+    optional: true
 
   util-deprecate@1.0.2: {}
 
@@ -27398,10 +27841,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vitest@2.1.9(@types/node@20.17.28)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@20.17.28)(typescript@5.8.3))(terser@5.43.1):
+  vitest@2.1.9(@types/node@20.17.28)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@20.17.28)(typescript@5.8.2))(terser@5.43.1):
     dependencies:
       '@vitest/expect': 2.1.9
-      '@vitest/mocker': 2.1.9(msw@2.7.3(@types/node@20.17.28)(typescript@5.8.3))(vite@5.4.15(@types/node@20.17.28)(lightningcss@1.30.1)(terser@5.43.1))
+      '@vitest/mocker': 2.1.9(msw@2.7.3(@types/node@20.17.28)(typescript@5.8.2))(vite@5.4.15(@types/node@20.17.28)(lightningcss@1.30.1)(terser@5.43.1))
       '@vitest/pretty-format': 2.1.9
       '@vitest/runner': 2.1.9
       '@vitest/snapshot': 2.1.9
@@ -27423,7 +27866,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.17.28
       '@vitest/ui': 2.1.9(vitest@2.1.9)
-      jsdom: 25.0.1(canvas@2.11.2(encoding@0.1.13))
+      jsdom: 25.0.1(canvas@2.11.2)
     transitivePeerDependencies:
       - less
       - lightningcss
@@ -27435,7 +27878,7 @@ snapshots:
       - supports-color
       - terser
 
-  vitest@2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@21.1.2(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1):
+  vitest@2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@21.1.2(canvas@2.11.2))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1):
     dependencies:
       '@vitest/expect': 2.1.9
       '@vitest/mocker': 2.1.9(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
@@ -27460,7 +27903,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.15.2
       '@vitest/ui': 2.1.9(vitest@2.1.9)
-      jsdom: 21.1.2(canvas@2.11.2(encoding@0.1.13))
+      jsdom: 21.1.2(canvas@2.11.2)
     transitivePeerDependencies:
       - less
       - lightningcss
@@ -27472,7 +27915,7 @@ snapshots:
       - supports-color
       - terser
 
-  vitest@2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1(canvas@2.11.2(encoding@0.1.13)))(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1):
+  vitest@2.1.9(@types/node@22.15.2)(@vitest/ui@2.1.9)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(terser@5.43.1):
     dependencies:
       '@vitest/expect': 2.1.9
       '@vitest/mocker': 2.1.9(msw@2.7.3(@types/node@22.15.2)(typescript@5.8.2))(vite@5.4.15(@types/node@22.15.2)(lightningcss@1.30.1)(terser@5.43.1))
@@ -27497,7 +27940,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.15.2
       '@vitest/ui': 2.1.9(vitest@2.1.9)
-      jsdom: 25.0.1(canvas@2.11.2(encoding@0.1.13))
+      jsdom: 25.0.1(canvas@2.11.2)
     transitivePeerDependencies:
       - less
       - lightningcss
