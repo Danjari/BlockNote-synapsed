@@ -1,137 +1,221 @@
-# @blocknote/extension-ai-slash
+# BlockNote AI Slash Extension
 
-AI-powered slash commands extension for BlockNote editor. This extension adds intelligent AI commands to the BlockNote slash menu, enabling users to interact with AI directly within the editor.
+AI-powered slash commands extension for BlockNote editor. This extension adds AI functionality to BlockNote while maintaining full compatibility with all existing features.
 
-## Features
+## ✨ Features
 
 - **AI Slash Commands**: `/explain`, `/quiz-me`, `/summarize`, `/diagram`
-- **Streaming Responses**: Real-time AI response streaming with visual indicators
-- **Context Awareness**: Commands work with selected text or current block content
-- **Synapsed Theme**: Custom styling with indigo accent colors
+- **Full BlockNote Compatibility**: All existing commands work alongside AI commands
 - **Event-Driven Architecture**: Clean separation between UI and AI logic
+- **Streaming Support**: Real-time AI response streaming
+- **Synapsed Theme**: Custom styling with indigo accent colors
+- **TypeScript Support**: Full type safety
 
-## Installation
+## 🚀 Quick Start
+
+### Installation
 
 ```bash
 npm install @blocknote/extension-ai-slash
 ```
 
-## Usage
+### Basic Usage
 
-### Basic Setup
+```javascript
+import { BlockNoteEditor } from '@blocknote/core';
+import { getAISlashMenuItems } from '@blocknote/extension-ai-slash';
 
-```tsx
-import { useAISlash, getAISlashMenuItems } from "@blocknote/extension-ai-slash";
-import { BlockNoteView } from "@blocknote/react";
+// Create editor with AI commands
+const editor = new BlockNoteEditor({
+  slashMenuItems: [
+    ...getDefaultSlashMenuItems(editor), // All original BlockNote commands
+    ...getAISlashMenuItems(editor, handleAICommand) // AI commands
+  ]
+});
 
-function MyEditor() {
-  const aiSlash = useAISlash({
-    classId: "my-class",
-    nodeId: "my-node",
-    jwt: "auth-token",
-    callbacks: {
-      onAICommand: (event) => {
-        // Handle AI command - make API call to your AI service
-        console.log("AI Command:", event.action, event.payload);
-      },
-      onStream: (chunk) => {
-        // Handle streaming response
-        console.log("Stream chunk:", chunk);
-      },
-      onQuizComplete: (result) => {
-        // Handle quiz completion
-        console.log("Quiz result:", result);
-      },
-    },
-  });
-
-  return (
-    <BlockNoteView
-      editor={editor}
-      slashMenuItems={getAISlashMenuItems(editor, aiSlash.emitAICommand)}
-    />
-  );
+// Handle AI commands
+function handleAICommand(action, payload) {
+  console.log('AI Command:', action, payload);
+  // Connect to your AI API here
 }
 ```
 
-### Available Commands
+## 🎯 Available Commands
 
-| Command | Description | Usage |
-|---------|-------------|-------|
-| `/explain` | Get explanation of selected text | Select text, type `/explain` |
-| `/quiz-me` | Generate quiz from content | Select text, type `/quiz-me` |
-| `/summarize` | Create summary of content | Select text, type `/summarize` |
-| `/diagram` | Generate diagram from content | Select text, type `/diagram` |
+### Original BlockNote Commands (All Work!)
+- `/paragraph` - Regular text block
+- `/heading` - Heading (H1, H2, H3)
+- `/bulletListItem` - Bullet list item
+- `/numberedListItem` - Numbered list item
+- `/quote` - Quote block
+- `/code` - Code block
+- `/image` - Image block
+- `/table` - Table
+- `/divider` - Horizontal divider
+- And many more...
 
-### Streaming Responses
+### AI Commands (New!)
+- `/explain` 🤖 - Explain selected text
+- `/quiz-me` 🤖 - Generate quiz based on content
+- `/summarize` 🤖 - Summarize selected text
+- `/diagram` 🤖 - Create diagram from content
 
-The extension provides utilities for handling streaming AI responses:
+## 🔧 API Reference
 
-```tsx
-import { createAIStreamingUtils } from "@blocknote/extension-ai-slash";
+### `getAISlashMenuItems(editor, emitAICommand)`
 
-const streamingUtils = createAIStreamingUtils(editor);
+Returns AI slash menu items for the BlockNote editor.
 
-// Start streaming
-streamingUtils.startStreaming("quote", "AI is thinking...");
+**Parameters:**
+- `editor` - BlockNote editor instance
+- `emitAICommand` - Function to handle AI commands
 
-// Update with chunks
-streamingUtils.updateStream({ content: "Hello", isComplete: false });
-streamingUtils.updateStream({ content: " World!", isComplete: true });
+**Returns:** Array of slash menu items
 
-// Complete streaming
-streamingUtils.completeStream();
-```
+### `useAISlash(config)`
 
-### Theming
+React hook for AI functionality.
 
-The extension includes Synapsed theme variables that can be customized:
+**Parameters:**
+- `config` - Configuration object (optional)
+
+**Returns:** AI hook with event emitter
+
+### `createAIStreamingUtils(editor)`
+
+Creates streaming utilities for real-time AI responses.
+
+**Parameters:**
+- `editor` - BlockNote editor instance
+
+**Returns:** AIStreamingUtils instance
+
+## 🎨 Theming
+
+The extension includes Synapsed theme with indigo accent colors:
 
 ```css
 :root {
   --bn-synapsed-accent-color: #6366f1;
   --bn-synapsed-font-family: "Inter", sans-serif;
-  --bn-synapsed-border-radius: 6px;
 }
 ```
 
-## API Reference
+## 📦 Exports
 
-### `useAISlash(config)`
+```javascript
+import {
+  // Main functions
+  useAISlash,
+  getAISlashMenuItems,
+  createAIStreamingUtils,
+  AIStreamingUtils,
+  
+  // Theme
+  defaultSynapsedTheme,
+  generateSynapsedThemeCSS,
+  getDefaultSynapsedThemeCSS,
+  
+  // Types
+  AICommandAction,
+  AICommandPayload,
+  AISlashConfig,
+  AISlashHook,
+  AISlashMenuItem,
+  SynapsedTheme
+} from '@blocknote/extension-ai-slash';
+```
 
-React hook that provides AI slash functionality.
+## 🔗 Integration Example
 
-**Parameters:**
-- `config` (AISlashConfig): Configuration object
+```javascript
+import { BlockNoteEditor, getDefaultSlashMenuItems } from '@blocknote/core';
+import { getAISlashMenuItems, createAIStreamingUtils } from '@blocknote/extension-ai-slash';
 
-**Returns:**
-- `AISlashHook`: Object with methods for AI interaction
+// Create editor
+const editor = new BlockNoteEditor({
+  slashMenuItems: [
+    ...getDefaultSlashMenuItems(editor), // All original commands
+    ...getAISlashMenuItems(editor, handleAICommand) // AI commands
+  ]
+});
 
-### `getAISlashMenuItems(editor, emitAICommand)`
+// AI command handler
+function handleAICommand(action, payload) {
+  switch (action) {
+    case 'explain':
+      // Call your AI API for explanation
+      break;
+    case 'quiz-me':
+      // Generate quiz
+      break;
+    case 'summarize':
+      // Summarize content
+      break;
+    case 'diagram':
+      // Create diagram
+      break;
+  }
+}
 
-Generates slash menu items for AI commands.
+// Streaming utilities
+const streamingUtils = createAIStreamingUtils(editor);
 
-**Parameters:**
-- `editor` (BlockNoteEditor): BlockNote editor instance
-- `emitAICommand` (function): Function to emit AI commands
+// Start streaming AI response
+streamingUtils.startStreaming('quote', 'AI is thinking...');
 
-**Returns:**
-- `AISlashMenuItem[]`: Array of slash menu items
+// Update streaming content
+streamingUtils.updateStreaming('This is the AI response...');
 
-### `createAIStreamingUtils(editor)`
+// Finish streaming
+streamingUtils.finishStreaming();
+```
 
-Creates utilities for handling streaming responses.
+## ✅ Compatibility
 
-**Parameters:**
-- `editor` (BlockNoteEditor): BlockNote editor instance
+**✅ Full BlockNote Compatibility**
+- All original slash commands work
+- All block types supported
+- All formatting options available
+- No breaking changes
 
-**Returns:**
-- `AIStreamingUtils`: Streaming utilities instance
+**✅ AI Commands**
+- Properly grouped under "AI" category
+- No conflicts with existing commands
+- Follow BlockNote command structure
+- Type-safe implementation
 
-## License
+## 🧪 Testing
+
+Run the test suite:
+
+```bash
+npm test
+```
+
+Or test manually:
+
+```bash
+node test-extension.js
+node test-compatibility.js
+```
+
+## 📄 License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## Contributing
+## 🤝 Contributing
 
-This extension is part of the BlockNote ecosystem. Please follow the BlockNote contribution guidelines. 
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests
+5. Submit a pull request
+
+## 🚀 Roadmap
+
+- [ ] Interactive quiz blocks
+- [ ] More AI commands
+- [ ] Custom AI model support
+- [ ] Advanced streaming features
+- [ ] Collaborative AI features 
