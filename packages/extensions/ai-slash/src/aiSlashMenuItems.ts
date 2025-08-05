@@ -1,24 +1,44 @@
 import type { BlockNoteEditor } from "@blocknote/core";
-import type { AISlashMenuItem, AICommandAction } from "./types.js";
+import type { AICommandAction } from "./types.js";
+
+// Define the interface locally to avoid import issues
+type DefaultReactSuggestionItem = {
+  key: string;
+  title: string;
+  onItemClick: () => void;
+  subtext?: string;
+  badge?: string;
+  aliases?: string[];
+  group?: string;
+  icon?: any;
+  size?: "default" | "small";
+};
 
 /**
  * Get AI slash menu items for the BlockNote editor
  *
+ * This function returns AI slash menu items that can be integrated with BlockNote's
+ * suggestion menu system. The items will appear in the slash menu when typing "/".
  *
- *
- *
+ * @param editor - The BlockNote editor instance
  * @param emitAICommand - Function to emit AI commands
- * @returns Array of AI slash menu items
+ * @returns Array of AI slash menu items compatible with BlockNote's suggestion menu
  */
 export function getAISlashMenuItems(
   editor: BlockNoteEditor,
   emitAICommand: (action: AICommandAction, payload?: any) => void,
-): AISlashMenuItem[] {
+): DefaultReactSuggestionItem[] {
   const getSelectedText = () => {
     return editor.getSelectedText();
   };
 
-  const items: AISlashMenuItem[] = [
+  const getCurrentBlockContent = () => {
+    // For now, return a simple fallback
+    // In a real implementation, you might want to extract text from the current block
+    return "current block content";
+  };
+
+  const items: DefaultReactSuggestionItem[] = [
     {
       key: "explain",
       title: "Explain",
@@ -28,12 +48,8 @@ export function getAISlashMenuItems(
       group: "AI",
       onItemClick: () => {
         const selectedText = getSelectedText();
-        if (!selectedText) {
-          // If no text selected, explain the current block
-          emitAICommand("explain", { selectedText: "current block content" });
-        } else {
-          emitAICommand("explain", { selectedText });
-        }
+        const content = selectedText || getCurrentBlockContent();
+        emitAICommand("explain", { selectedText: content });
       },
     },
     {
@@ -45,12 +61,8 @@ export function getAISlashMenuItems(
       group: "AI",
       onItemClick: () => {
         const selectedText = getSelectedText();
-        if (!selectedText) {
-          // If no text selected, quiz on the current block
-          emitAICommand("quiz-me", { selectedText: "current block content" });
-        } else {
-          emitAICommand("quiz-me", { selectedText });
-        }
+        const content = selectedText || getCurrentBlockContent();
+        emitAICommand("quiz-me", { selectedText: content });
       },
     },
     {
@@ -62,12 +74,8 @@ export function getAISlashMenuItems(
       group: "AI",
       onItemClick: () => {
         const selectedText = getSelectedText();
-        if (!selectedText) {
-          // If no text selected, summarize the current block
-          emitAICommand("summarize", { selectedText: "current block content" });
-        } else {
-          emitAICommand("summarize", { selectedText });
-        }
+        const content = selectedText || getCurrentBlockContent();
+        emitAICommand("summarize", { selectedText: content });
       },
     },
     {
@@ -79,12 +87,8 @@ export function getAISlashMenuItems(
       group: "AI",
       onItemClick: () => {
         const selectedText = getSelectedText();
-        if (!selectedText) {
-          // If no text selected, diagram the current block
-          emitAICommand("diagram", { selectedText: "current block content" });
-        } else {
-          emitAICommand("diagram", { selectedText });
-        }
+        const content = selectedText || getCurrentBlockContent();
+        emitAICommand("diagram", { selectedText: content });
       },
     },
   ];

@@ -1656,6 +1656,29 @@
           "slug": "ai"
         },
         "readme": "This example combines the AI extension with the ghost writer example to show how to use the AI extension in a collaborative environment.\n\n**Relevant Docs:**\n\n- [Editor Setup](/docs/getting-started/editor-setup)\n- [Changing the Formatting Toolbar](/docs/react/components/formatting-toolbar#changing-the-formatting-toolbar)\n- [Changing Slash Menu Items](/docs/react/components/suggestion-menus#changing-slash-menu-items)\n- [Getting Stared with BlockNote AI](/docs/features/ai/setup)"
+      },
+      {
+        "projectSlug": "custom-ai-extension",
+        "fullSlug": "ai/custom-ai-extension",
+        "pathFromRoot": "examples/09-ai/05-custom-ai-extension",
+        "config": {
+          "playground": true,
+          "docs": true,
+          "author": "mahamadoumoudjahidmahamadounouroudini",
+          "tags": [
+            "AI",
+            "Custom Extension",
+            "Slash Commands"
+          ],
+          "title": "Custom AI Slash Extension",
+          "readme": "This example demonstrates how to create and use a custom AI slash extension with BlockNote. It shows how to integrate external AI commands into the editor's slash menu.\n\n**Try it out:** Type '/' to see the slash menu with custom AI commands like '/explain', '/quiz-me', '/summarize', and '/diagram'.\n\n**Key Features:**\n- Custom AI slash commands\n- External AI integration\n- Simulated AI responses\n- Response logging\n\n**Relevant Docs:**\n- [Suggestion Menus](/docs/react/components/suggestion-menus)\n- [Slash Menu](/docs/react/components/suggestion-menus#slash-menu)\n- [Editor Setup](/docs/getting-started/editor-setup)"
+        },
+        "title": "Custom AI Slash Extension",
+        "group": {
+          "pathFromRoot": "examples/09-ai",
+          "slug": "ai"
+        },
+        "readme": "This example demonstrates how to create and use a custom AI slash extension with BlockNote. It shows how to integrate external AI commands into the editor's slash menu.\n\n**Try it out:** Type '/' to see the slash menu with custom AI commands like '/explain', '/quiz-me', '/summarize', and '/diagram'.\n\n**Key Features:**\n- Custom AI slash commands\n- External AI integration\n- Simulated AI responses\n- Response logging\n\n**Relevant Docs:**\n- [Suggestion Menus](/docs/react/components/suggestion-menus)\n- [Slash Menu](/docs/react/components/suggestion-menus#slash-menu)\n- [Editor Setup](/docs/getting-started/editor-setup)"
       }
     ]
   },

@@ -11,7 +11,7 @@
     "directory": "packages/extensions/ai-slash"
   },
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "files": [
     "dist",
     "types",
@@ -33,12 +33,12 @@
   "description": "AI-powered slash commands extension for BlockNote editor",
   "type": "module",
   "source": "src/index.ts",
-  "types": "./types/src/index.d.ts",
+  "types": "./types/index.d.ts",
   "main": "./dist/ai-slash.cjs",
   "module": "./dist/ai-slash.js",
   "exports": {
     ".": {
-      "types": "./types/src/index.d.ts",
+      "types": "./types/index.d.ts",
       "import": "./dist/ai-slash.js",
       "require": "./dist/ai-slash.cjs"
     },

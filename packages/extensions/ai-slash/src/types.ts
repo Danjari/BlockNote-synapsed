@@ -60,6 +60,8 @@ export type AISlashMenuItem = {
   aliases?: string[];
   group?: string;
   onItemClick: () => void;
+  icon?: any;
+  size?: "default" | "small";
 };
 
 export type SynapsedTheme = {

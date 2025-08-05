@@ -1,0 +1,8 @@
+{
+  "playground": true,
+  "docs": true,
+  "author": "mahamadoumoudjahidmahamadounouroudini",
+  "tags": ["AI", "Custom Extension", "Slash Commands"],
+  "title": "Custom AI Slash Extension",
+  "readme": "This example demonstrates how to create and use a custom AI slash extension with BlockNote. It shows how to integrate external AI commands into the editor's slash menu.\n\n**Try it out:** Type '/' to see the slash menu with custom AI commands like '/explain', '/quiz-me', '/summarize', and '/diagram'.\n\n**Key Features:**\n- Custom AI slash commands\n- External AI integration\n- Simulated AI responses\n- Response logging\n\n**Relevant Docs:**\n- [Suggestion Menus](/docs/react/components/suggestion-menus)\n- [Slash Menu](/docs/react/components/suggestion-menus#slash-menu)\n- [Editor Setup](/docs/getting-started/editor-setup)"
+}
