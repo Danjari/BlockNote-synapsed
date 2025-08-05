@@ -21,7 +21,7 @@ If you want to publish under your own namespace:
 
 ```bash
 # Edit package.json and change the name
-"name": "@your-username/blocknote-ai-extension"
+"name": "@danjari/blocknote-ai-extension"
 # or
 "name": "synapsed-ai-extension"
 ```
@@ -45,13 +45,13 @@ After publishing, you can install it in your Synapsed application:
 
 ```bash
 # Install the published package
-npm install @blocknote/extension-ai-slash
+npm install @danjari/blocknote-ai-extension
 # or whatever name you chose
 ```
 
 ```javascript
 // Import in your Synapsed app
-import { getAISlashMenuItems } from "@blocknote/extension-ai-slash";
+import { getAISlashMenuItems } from "@danjari/blocknote-ai-extension";
 ```
 
 ## 🔄 Development Workflow
