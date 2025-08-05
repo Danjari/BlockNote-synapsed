@@ -49,9 +49,10 @@
     }
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --config vite.dev.config.ts",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "serve": "vite preview --port 3001",
     "lint": "eslint src --max-warnings 0",
     "test": "vitest --run",
     "test-watch": "vitest watch",

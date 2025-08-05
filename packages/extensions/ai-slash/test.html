@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlockNote AI Slash Extension Test</title>
+    <style>
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .header {
+        background: #6366f1;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .content {
+        padding: 20px;
+      }
+      .instructions {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+      .instructions h3 {
+        margin-top: 0;
+        color: #374151;
+      }
+      .instructions ul {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+      .instructions li {
+        margin: 5px 0;
+      }
+      #editor {
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        min-height: 400px;
+      }
+      .log {
+        background: #1f2937;
+        color: #f9fafb;
+        padding: 15px;
+        border-radius: 6px;
+        font-family: "Monaco", "Menlo", monospace;
+        font-size: 12px;
+        margin-top: 20px;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+      .log-entry {
+        margin: 2px 0;
+      }
+      .log-ai {
+        color: #10b981;
+      }
+      .log-error {
+        color: #ef4444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🤖 BlockNote AI Slash Extension Test</h1>
+        <p>Test the AI slash commands in the editor below</p>
+      </div>
+
+      <div class="content">
+        <div class="instructions">
+          <h3>How to test:</h3>
+          <ul>
+            <li>Type <code>/</code> in the editor to see the slash menu</li>
+            <li>
+              Look for AI commands: <code>/explain</code>,
+              <code>/quiz-me</code>, <code>/summarize</code>,
+              <code>/diagram</code>
+            </li>
+            <li>Select some text first, then use an AI command</li>
+            <li>Check the console below for emitted events</li>
+          </ul>
+        </div>
+
+        <div id="editor"></div>
+
+        <div class="log" id="log">
+          <div class="log-entry">
+            🚀 Extension loaded. Type / to see AI commands...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module">
+      import { BlockNoteEditor } from "@blocknote/core";
+      import { BlockNoteView } from "@blocknote/mantine";
+      import "@blocknote/core/fonts/inter.css";
+      import "@blocknote/mantine/style.css";
+
+      // Import our extension
+      import {
+        useAISlash,
+        getAISlashMenuItems,
+        createAIStreamingUtils,
+      } from "./dist/ai-slash.js";
+
+      // Mock AI command handler
+      function handleAICommand(action, payload) {
+        const log = document.getElementById("log");
+        const timestamp = new Date().toLocaleTimeString();
+
+        log.innerHTML += `
+                <div class="log-entry log-ai">
+                    [${timestamp}] AI Command: ${action}
+                    <br>Payload: ${JSON.stringify(payload, null, 2)}
+                </div>
+            `;
+        log.scrollTop = log.scrollHeight;
+
+        // Simulate AI response
+        setTimeout(() => {
+          log.innerHTML += `
+                    <div class="log-entry log-ai">
+                        [${timestamp}] AI Response: "This is a simulated AI response for ${action} command"
+                    </div>
+                `;
+          log.scrollTop = log.scrollHeight;
+        }, 1000);
+      }
+
+      // Create editor with AI extension
+      const editor = new BlockNoteEditor({
+        initialContent: [
+          {
+            type: "heading",
+            props: { level: 1 },
+            content: "Welcome to BlockNote AI Extension Test",
+          },
+          {
+            type: "paragraph",
+            content: "Type / to see the slash menu and try the AI commands!",
+          },
+          {
+            type: "paragraph",
+            content: "Select some text and try /explain or /summarize",
+          },
+        ],
+        // Add AI slash menu items
+        slashMenuItems: [...getAISlashMenuItems(editor, handleAICommand)],
+      });
+
+      // Mount the editor
+      const view = new BlockNoteView({
+        editor,
+        mount: document.getElementById("editor"),
+      });
+
+      // Log successful load
+      const log = document.getElementById("log");
+      log.innerHTML += `
+            <div class="log-entry log-ai">
+                ✅ Editor mounted successfully with AI extension
+            </div>
+        `;
+
+      // Test the useAISlash hook (for demonstration)
+      console.log("AI Slash Extension loaded:", {
+        useAISlash,
+        getAISlashMenuItems,
+        createAIStreamingUtils,
+      });
+    </script>
+  </body>
+</html>

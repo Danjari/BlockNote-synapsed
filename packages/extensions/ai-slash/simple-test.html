@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple AI Extension Test</title>
+    <style>
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      .header {
+        background: #6366f1;
+        color: white;
+        padding: 20px;
+        margin: -20px -20px 20px -20px;
+        border-radius: 8px 8px 0 0;
+        text-align: center;
+      }
+      .test-section {
+        margin: 20px 0;
+        padding: 15px;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+      }
+      .log {
+        background: #1f2937;
+        color: #f9fafb;
+        padding: 15px;
+        border-radius: 6px;
+        font-family: "Monaco", "Menlo", monospace;
+        font-size: 12px;
+        margin-top: 20px;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+      .log-entry {
+        margin: 2px 0;
+      }
+      .log-success {
+        color: #10b981;
+      }
+      .log-error {
+        color: #ef4444;
+      }
+      .log-info {
+        color: #3b82f6;
+      }
+      button {
+        background: #6366f1;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin: 5px;
+      }
+      button:hover {
+        background: #5855eb;
+      }
+      pre {
+        background: #f8fafc;
+        padding: 10px;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🤖 BlockNote AI Extension Test</h1>
+        <p>Testing the AI Slash Extension Components</p>
+      </div>
+
+      <div class="test-section">
+        <h3>📦 Extension Build Status</h3>
+        <p>Testing if the extension builds and exports correctly...</p>
+        <button onclick="testBuild()">Test Build</button>
+        <div id="build-status"></div>
+      </div>
+
+      <div class="test-section">
+        <h3>🔧 Extension Exports</h3>
+        <p>Checking available exports from the extension...</p>
+        <button onclick="testExports()">Test Exports</button>
+        <div id="exports-status"></div>
+      </div>
+
+      <div class="test-section">
+        <h3>🎯 AI Commands</h3>
+        <p>Testing AI command generation...</p>
+        <button onclick="testAICommands()">Test AI Commands</button>
+        <div id="commands-status"></div>
+      </div>
+
+      <div class="log" id="log">
+        <div class="log-entry log-info">
+          🚀 Ready to test the AI Extension...
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function log(message, type = "info") {
+        const logDiv = document.getElementById("log");
+        const timestamp = new Date().toLocaleTimeString();
+        logDiv.innerHTML += `
+                <div class="log-entry log-${type}">
+                    [${timestamp}] ${message}
+                </div>
+            `;
+        logDiv.scrollTop = logDiv.scrollHeight;
+      }
+
+      function testBuild() {
+        log("Testing extension build...", "info");
+
+        // Check if dist files exist
+        fetch("./dist/ai-slash.js")
+          .then((response) => {
+            if (response.ok) {
+              log("✅ Extension JS file found", "success");
+              document.getElementById("build-status").innerHTML =
+                '<p style="color: green;">✅ Build successful - dist/ai-slash.js exists</p>';
+            } else {
+              throw new Error("File not found");
+            }
+          })
+          .catch((error) => {
+            log("❌ Extension build failed: " + error.message, "error");
+            document.getElementById("build-status").innerHTML =
+              '<p style="color: red;">❌ Build failed - Check console for details</p>';
+          });
+      }
+
+      function testExports() {
+        log("Testing extension exports...", "info");
+
+        // Try to import the extension
+        import("./dist/ai-slash.js")
+          .then((module) => {
+            log("✅ Extension module loaded successfully", "success");
+
+            const exports = Object.keys(module);
+            log(`📦 Available exports: ${exports.join(", ")}`, "info");
+
+            document.getElementById("exports-status").innerHTML = `
+                        <p style="color: green;">✅ Exports working</p>
+                        <pre>${JSON.stringify(exports, null, 2)}</pre>
+                    `;
+          })
+          .catch((error) => {
+            log("❌ Extension exports failed: " + error.message, "error");
+            document.getElementById("exports-status").innerHTML =
+              '<p style="color: red;">❌ Exports failed - Check console for details</p>';
+          });
+      }
+
+      function testAICommands() {
+        log("Testing AI commands...", "info");
+
+        import("./dist/ai-slash.js")
+          .then((module) => {
+            if (module.getAISlashMenuItems) {
+              // Mock editor and emit function
+              const mockEditor = {
+                getSelectedText: () => "test text",
+                getTextCursorPosition: () => ({ block: { id: "test" } }),
+              };
+
+              const mockEmit = (action, payload) => {
+                log(`🎯 AI Command: ${action}`, "success");
+                log(`📦 Payload: ${JSON.stringify(payload)}`, "info");
+              };
+
+              const menuItems = module.getAISlashMenuItems(
+                mockEditor,
+                mockEmit,
+              );
+              log(`✅ Generated ${menuItems.length} AI menu items`, "success");
+
+              document.getElementById("commands-status").innerHTML = `
+                            <p style="color: green;">✅ AI Commands working</p>
+                            <pre>${JSON.stringify(
+                              menuItems.map((item) => ({
+                                key: item.key,
+                                title: item.title,
+                                group: item.group,
+                              })),
+                              null,
+                              2,
+                            )}</pre>
+                        `;
+            } else {
+              throw new Error("getAISlashMenuItems not found");
+            }
+          })
+          .catch((error) => {
+            log("❌ AI commands test failed: " + error.message, "error");
+            document.getElementById("commands-status").innerHTML =
+              '<p style="color: red;">❌ AI Commands failed - Check console for details</p>';
+          });
+      }
+
+      // Auto-run basic tests on load
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          testBuild();
+          setTimeout(() => testExports(), 1000);
+          setTimeout(() => testAICommands(), 2000);
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
