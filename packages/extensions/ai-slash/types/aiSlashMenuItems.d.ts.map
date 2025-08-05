@@ -1,0 +1,1 @@
+{"version":3,"file":"aiSlashMenuItems.d.ts","sourceRoot":"","sources":["../src/aiSlashMenuItems.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,eAAe,EAAE,MAAM,iBAAiB,CAAC;AACvD,OAAO,KAAK,EAAE,eAAe,EAAE,eAAe,EAAE,MAAM,YAAY,CAAC;AAEnE;;;;;;GAMG;AACH,wBAAgB,mBAAmB,CACjC,MAAM,EAAE,eAAe,EACvB,aAAa,EAAE,CAAC,MAAM,EAAE,eAAe,EAAE,OAAO,CAAC,EAAE,GAAG,KAAK,IAAI,GAC9D,eAAe,EAAE,CA2FnB"}
