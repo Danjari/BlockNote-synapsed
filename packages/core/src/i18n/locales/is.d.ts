@@ -1,0 +1,3 @@
+import type { Dictionary } from "../dictionary.js";
+export declare const is: Dictionary;
+//# sourceMappingURL=is.d.ts.map

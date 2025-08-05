@@ -1,0 +1,1 @@
+{"version":3,"file":"KeyboardShortcutsExtension.d.ts","sourceRoot":"","sources":["KeyboardShortcutsExtension.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,cAAc,CAAC;AAczC,OAAO,EAAE,eAAe,EAAE,MAAM,iCAAiC,CAAC;AAElE,eAAO,MAAM,0BAA0B;YAC7B,eAAe,CAAC,GAAG,EAAE,GAAG,EAAE,GAAG,CAAC;iBACzB,oBAAoB,GAAG,eAAe;OA8lBnD,CAAC"}

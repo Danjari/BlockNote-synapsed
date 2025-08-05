@@ -15,7 +15,7 @@ export declare class AIStreamingUtils {
      * @param initialContent - Initial content for the block
      * @returns The created block
      */
-    startStreaming(blockType?: string, initialContent?: string): any;
+    startStreaming(_blockType?: string, initialContent?: string): any;
     /**
      * Update the streaming content
      *

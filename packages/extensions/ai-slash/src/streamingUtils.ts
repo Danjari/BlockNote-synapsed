@@ -15,34 +15,37 @@ export class AIStreamingUtils {
 
   /**
    * Start streaming an AI response
-   * 
+   *
    * @param blockType - Type of block to create (e.g., "quote", "paragraph")
    * @param initialContent - Initial content for the block
    * @returns The created block
    */
-  startStreaming(blockType: string = "quote", initialContent: string = "") {
+  startStreaming(_blockType: string = "quote", initialContent: string = "") {
     // Create a new block for the AI response
     const newBlock = {
-      type: blockType,
-      content: initialContent ? [{ type: "text", text: initialContent }] : undefined,
-    };
+      type: "paragraph",
+    } as any;
 
     // Insert the block after the current cursor position
     const currentBlock = this.editor.getTextCursorPosition().block;
-    this.currentStreamingBlock = this.editor.insertBlocks([newBlock], currentBlock, "after")[0];
-    
+    this.currentStreamingBlock = this.editor.insertBlocks(
+      [newBlock],
+      currentBlock,
+      "after",
+    )[0];
+
     // Move cursor to the new block
     this.editor.setTextCursorPosition(this.currentStreamingBlock);
-    
+
     // Initialize buffer
     this.streamBuffer = initialContent;
-    
+
     return this.currentStreamingBlock;
   }
 
   /**
    * Update the streaming content
-   * 
+   *
    * @param chunk - New content chunk
    */
   updateStream(chunk: AIStreamChunk) {
@@ -53,7 +56,7 @@ export class AIStreamingUtils {
 
     // Update the block content
     this.editor.updateBlock(this.currentStreamingBlock, {
-      content: [{ type: "text", text: this.streamBuffer }],
+      content: [{ type: "text", text: this.streamBuffer, styles: {} }],
     });
 
     // If streaming is complete, move cursor to end of content
@@ -97,10 +100,12 @@ export class AIStreamingUtils {
 
 /**
  * Create a streaming utilities instance for an editor
- * 
+ *
  * @param editor - BlockNote editor instance
  * @returns AIStreamingUtils instance
  */
-export function createAIStreamingUtils(editor: BlockNoteEditor): AIStreamingUtils {
+export function createAIStreamingUtils(
+  editor: BlockNoteEditor,
+): AIStreamingUtils {
   return new AIStreamingUtils(editor);
-} 
+}

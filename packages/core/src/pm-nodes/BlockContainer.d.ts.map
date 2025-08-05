@@ -1,0 +1,1 @@
+{"version":3,"file":"BlockContainer.d.ts","sourceRoot":"","sources":["BlockContainer.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,IAAI,EAAE,MAAM,cAAc,CAAC;AAEpC,OAAO,KAAK,EAAE,eAAe,EAAE,MAAM,8BAA8B,CAAC;AACpE,OAAO,EAAE,sBAAsB,EAAE,MAAM,oBAAoB,CAAC;AAY5D;;GAEG;AACH,eAAO,MAAM,cAAc;oBACT,sBAAsB;YAC9B,eAAe,CAAC,GAAG,EAAE,GAAG,EAAE,GAAG,CAAC;OAmEtC,CAAC"}

@@ -1,10 +1,8 @@
-import type { BlockNoteEditor } from "@blocknote/core";
-
-export type AICommandAction = 
-  | "explain" 
-  | "quiz-me" 
-  | "summarize" 
-  | "diagram" 
+export type AICommandAction =
+  | "explain"
+  | "quiz-me"
+  | "summarize"
+  | "diagram"
   | "intro";
 
 export type AICommandPayload = {
@@ -68,4 +66,4 @@ export type SynapsedTheme = {
   fontFamily: string;
   accentColor: string;
   borderRadius: string;
-}; 
+};

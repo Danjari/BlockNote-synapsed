@@ -1,0 +1,153 @@
+import { Node, } from "@tiptap/core";
+import { defaultBlockToHTML } from "../../blocks/defaultBlockHelpers.js";
+import { inheritedProps } from "../../blocks/defaultProps.js";
+import { mergeCSSClasses } from "../../util/browser.js";
+import { camelToDataKebab } from "../../util/string.js";
+// Function that uses the 'propSchema' of a blockConfig to create a TipTap
+// node's `addAttributes` property.
+// TODO: extract function
+export function propsToAttributes(propSchema) {
+    const tiptapAttributes = {};
+    Object.entries(propSchema)
+        .filter(([name, _spec]) => !inheritedProps.includes(name))
+        .forEach(([name, spec]) => {
+        tiptapAttributes[name] = {
+            default: spec.default,
+            keepOnSplit: true,
+            // Props are displayed in kebab-case as HTML attributes. If a prop's
+            // value is the same as its default, we don't display an HTML
+            // attribute for it.
+            parseHTML: (element) => {
+                const value = element.getAttribute(camelToDataKebab(name));
+                if (value === null) {
+                    return null;
+                }
+                if ((spec.default === undefined && spec.type === "boolean") ||
+                    (spec.default !== undefined && typeof spec.default === "boolean")) {
+                    if (value === "true") {
+                        return true;
+                    }
+                    if (value === "false") {
+                        return false;
+                    }
+                    return null;
+                }
+                if ((spec.default === undefined && spec.type === "number") ||
+                    (spec.default !== undefined && typeof spec.default === "number")) {
+                    const asNumber = parseFloat(value);
+                    const isNumeric = !Number.isNaN(asNumber) && Number.isFinite(asNumber);
+                    if (isNumeric) {
+                        return asNumber;
+                    }
+                    return null;
+                }
+                return value;
+            },
+            renderHTML: (attributes) => {
+                // don't render to html if the value is the same as the default
+                return attributes[name] !== spec.default
+                    ? {
+                        [camelToDataKebab(name)]: attributes[name],
+                    }
+                    : {};
+            },
+        };
+    });
+    return tiptapAttributes;
+}
+// Used to figure out which block should be rendered. This block is then used to
+// create the node view.
+export function getBlockFromPos(getPos, editor, tipTapEditor, type) {
+    // Gets position of the node
+    if (typeof getPos === "boolean") {
+        throw new Error("Cannot find node position as getPos is a boolean, not a function.");
+    }
+    const pos = getPos();
+    // Gets parent blockContainer node
+    const blockContainer = tipTapEditor.state.doc.resolve(pos).node();
+    // Gets block identifier
+    const blockIdentifier = blockContainer.attrs.id;
+    if (!blockIdentifier) {
+        throw new Error("Block doesn't have id");
+    }
+    // Gets the block
+    const block = editor.getBlock(blockIdentifier);
+    if (block.type !== type) {
+        throw new Error("Block type does not match");
+    }
+    return block;
+}
+// Function that wraps the `dom` element returned from 'blockConfig.render' in a
+// `blockContent` div, which contains the block type and props as HTML
+// attributes. If `blockConfig.render` also returns a `contentDOM`, it also adds
+// an `inlineContent` class to it.
+export function wrapInBlockStructure(element, blockType, blockProps, propSchema, isFileBlock = false, domAttributes) {
+    // Creates `blockContent` element
+    const blockContent = document.createElement("div");
+    // Adds custom HTML attributes
+    if (domAttributes !== undefined) {
+        for (const [attr, value] of Object.entries(domAttributes)) {
+            if (attr !== "class") {
+                blockContent.setAttribute(attr, value);
+            }
+        }
+    }
+    // Sets blockContent class
+    blockContent.className = mergeCSSClasses("bn-block-content", domAttributes?.class || "");
+    // Sets content type attribute
+    blockContent.setAttribute("data-content-type", blockType);
+    // Adds props as HTML attributes in kebab-case with "data-" prefix. Skips props
+    // which are already added as HTML attributes to the parent `blockContent`
+    // element (inheritedProps) and props set to their default values.
+    for (const [prop, value] of Object.entries(blockProps)) {
+        const spec = propSchema[prop];
+        const defaultValue = spec.default;
+        if (!inheritedProps.includes(prop) && value !== defaultValue) {
+            blockContent.setAttribute(camelToDataKebab(prop), value);
+        }
+    }
+    // Adds file block attribute
+    if (isFileBlock) {
+        blockContent.setAttribute("data-file-block", "");
+    }
+    blockContent.appendChild(element.dom);
+    if (element.contentDOM !== undefined) {
+        element.contentDOM.className = mergeCSSClasses("bn-inline-content", element.contentDOM.className);
+    }
+    return {
+        ...element,
+        dom: blockContent,
+    };
+}
+export function createStronglyTypedTiptapNode(config) {
+    return Node.create(config); // force re-typing (should be safe as it's type-checked from the config)
+}
+// This helper function helps to instantiate a blockspec with a
+// config and implementation that conform to the type of Config
+export function createInternalBlockSpec(config, implementation) {
+    return {
+        config,
+        implementation,
+    };
+}
+export function createBlockSpecFromStronglyTypedTiptapNode(node, propSchema, requiredExtensions) {
+    return createInternalBlockSpec({
+        type: node.name,
+        content: (node.config.content === "inline*"
+            ? "inline"
+            : node.config.content === "tableRow+"
+                ? "table"
+                : "none"),
+        propSchema,
+    }, {
+        node,
+        requiredExtensions,
+        toInternalHTML: defaultBlockToHTML,
+        toExternalHTML: defaultBlockToHTML,
+        // parse: () => undefined, // parse rules are in node already
+    });
+}
+export function getBlockSchemaFromSpecs(specs) {
+    return Object.fromEntries(Object.entries(specs).map(([key, value]) => [key, value.config]));
+}
+//# sourceMappingURL=internal.js.map

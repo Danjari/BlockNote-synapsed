@@ -1,0 +1,1 @@
+{"version":3,"file":"SyncPlugin.d.ts","sourceRoot":"","sources":["SyncPlugin.ts"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,CAAC,MAAM,KAAK,CAAC;AAC9B,OAAO,EAAE,kBAAkB,EAAE,MAAM,oCAAoC,CAAC;AAExE,qBAAa,UAAW,SAAQ,kBAAkB;WAClC,GAAG;gBAIL,QAAQ,EAAE,CAAC,CAAC,WAAW;IAKnC,IAAW,QAAQ,WAElB;CACF"}

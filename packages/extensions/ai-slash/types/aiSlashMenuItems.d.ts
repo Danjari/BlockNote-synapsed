@@ -3,7 +3,9 @@ import type { AISlashMenuItem, AICommandAction } from "./types.js";
 /**
  * Get AI slash menu items for the BlockNote editor
  *
- * @param editor - BlockNote editor instance
+ *
+ *
+ *
  * @param emitAICommand - Function to emit AI commands
  * @returns Array of AI slash menu items
  */

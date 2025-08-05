@@ -3,23 +3,19 @@ import type { AISlashMenuItem, AICommandAction } from "./types.js";
 
 /**
  * Get AI slash menu items for the BlockNote editor
- * 
- * @param editor - BlockNote editor instance
+ *
+ *
+ *
+ *
  * @param emitAICommand - Function to emit AI commands
  * @returns Array of AI slash menu items
  */
 export function getAISlashMenuItems(
   editor: BlockNoteEditor,
-  emitAICommand: (action: AICommandAction, payload?: any) => void
+  emitAICommand: (action: AICommandAction, payload?: any) => void,
 ): AISlashMenuItem[] {
   const getSelectedText = () => {
-    const selection = editor.getSelection();
-    if (!selection) return "";
-    
-    // Get selected text from the current selection
-    const { from, to } = selection;
-    const content = editor.getTextContent(from, to);
-    return content.trim();
+    return editor.getSelectedText();
   };
 
   const items: AISlashMenuItem[] = [
@@ -34,9 +30,7 @@ export function getAISlashMenuItems(
         const selectedText = getSelectedText();
         if (!selectedText) {
           // If no text selected, explain the current block
-          const currentBlock = editor.getTextCursorPosition().block;
-          const blockContent = editor.getTextContent(currentBlock);
-          emitAICommand("explain", { selectedText: blockContent });
+          emitAICommand("explain", { selectedText: "current block content" });
         } else {
           emitAICommand("explain", { selectedText });
         }
@@ -53,9 +47,7 @@ export function getAISlashMenuItems(
         const selectedText = getSelectedText();
         if (!selectedText) {
           // If no text selected, quiz on the current block
-          const currentBlock = editor.getTextCursorPosition().block;
-          const blockContent = editor.getTextContent(currentBlock);
-          emitAICommand("quiz-me", { selectedText: blockContent });
+          emitAICommand("quiz-me", { selectedText: "current block content" });
         } else {
           emitAICommand("quiz-me", { selectedText });
         }
@@ -72,9 +64,7 @@ export function getAISlashMenuItems(
         const selectedText = getSelectedText();
         if (!selectedText) {
           // If no text selected, summarize the current block
-          const currentBlock = editor.getTextCursorPosition().block;
-          const blockContent = editor.getTextContent(currentBlock);
-          emitAICommand("summarize", { selectedText: blockContent });
+          emitAICommand("summarize", { selectedText: "current block content" });
         } else {
           emitAICommand("summarize", { selectedText });
         }
@@ -91,9 +81,7 @@ export function getAISlashMenuItems(
         const selectedText = getSelectedText();
         if (!selectedText) {
           // If no text selected, diagram the current block
-          const currentBlock = editor.getTextCursorPosition().block;
-          const blockContent = editor.getTextContent(currentBlock);
-          emitAICommand("diagram", { selectedText: blockContent });
+          emitAICommand("diagram", { selectedText: "current block content" });
         } else {
           emitAICommand("diagram", { selectedText });
         }
@@ -102,4 +90,4 @@ export function getAISlashMenuItems(
   ];
 
   return items;
-} 
+}

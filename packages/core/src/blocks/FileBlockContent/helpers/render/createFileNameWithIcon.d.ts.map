@@ -1,0 +1,1 @@
+{"version":3,"file":"createFileNameWithIcon.d.ts","sourceRoot":"","sources":["createFileNameWithIcon.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,eAAe,EAAE,eAAe,EAAE,MAAM,6BAA6B,CAAC;AAE/E,eAAO,MAAM,aAAa,gRAAwQ,CAAC;AAEnS,eAAO,MAAM,sBAAsB,GACjC,OAAO,eAAe,CAAC,eAAe,EAAE,GAAG,EAAE,GAAG,CAAC,KAChD;IAAE,GAAG,EAAE,WAAW,CAAC;IAAC,OAAO,CAAC,EAAE,MAAM,IAAI,CAAA;CAiB1C,CAAC"}

@@ -1,24 +1,17 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.getAISlashMenuItems = getAISlashMenuItems;
 /**
  * Get AI slash menu items for the BlockNote editor
  *
- * @param editor - BlockNote editor instance
+ *
+ *
+ *
  * @param emitAICommand - Function to emit AI commands
  * @returns Array of AI slash menu items
  */
-function getAISlashMenuItems(editor, emitAICommand) {
-    var getSelectedText = function () {
-        var selection = editor.getSelection();
-        if (!selection)
-            return "";
-        // Get selected text from the current selection
-        var from = selection.from, to = selection.to;
-        var content = editor.getTextContent(from, to);
-        return content.trim();
+export function getAISlashMenuItems(editor, emitAICommand) {
+    const getSelectedText = () => {
+        return editor.getSelectedText();
     };
-    var items = [
+    const items = [
         {
             key: "explain",
             title: "Explain",
@@ -26,16 +19,14 @@ function getAISlashMenuItems(editor, emitAICommand) {
             badge: "AI",
             aliases: ["explain", "what", "how", "why"],
             group: "AI",
-            onItemClick: function () {
-                var selectedText = getSelectedText();
+            onItemClick: () => {
+                const selectedText = getSelectedText();
                 if (!selectedText) {
                     // If no text selected, explain the current block
-                    var currentBlock = editor.getTextCursorPosition().block;
-                    var blockContent = editor.getTextContent(currentBlock);
-                    emitAICommand("explain", { selectedText: blockContent });
+                    emitAICommand("explain", { selectedText: "current block content" });
                 }
                 else {
-                    emitAICommand("explain", { selectedText: selectedText });
+                    emitAICommand("explain", { selectedText });
                 }
             },
         },
@@ -46,16 +37,14 @@ function getAISlashMenuItems(editor, emitAICommand) {
             badge: "AI",
             aliases: ["quiz", "test", "question"],
             group: "AI",
-            onItemClick: function () {
-                var selectedText = getSelectedText();
+            onItemClick: () => {
+                const selectedText = getSelectedText();
                 if (!selectedText) {
                     // If no text selected, quiz on the current block
-                    var currentBlock = editor.getTextCursorPosition().block;
-                    var blockContent = editor.getTextContent(currentBlock);
-                    emitAICommand("quiz-me", { selectedText: blockContent });
+                    emitAICommand("quiz-me", { selectedText: "current block content" });
                 }
                 else {
-                    emitAICommand("quiz-me", { selectedText: selectedText });
+                    emitAICommand("quiz-me", { selectedText });
                 }
             },
         },
@@ -66,16 +55,14 @@ function getAISlashMenuItems(editor, emitAICommand) {
             badge: "AI",
             aliases: ["summary", "summarize", "tl;dr"],
             group: "AI",
-            onItemClick: function () {
-                var selectedText = getSelectedText();
+            onItemClick: () => {
+                const selectedText = getSelectedText();
                 if (!selectedText) {
                     // If no text selected, summarize the current block
-                    var currentBlock = editor.getTextCursorPosition().block;
-                    var blockContent = editor.getTextContent(currentBlock);
-                    emitAICommand("summarize", { selectedText: blockContent });
+                    emitAICommand("summarize", { selectedText: "current block content" });
                 }
                 else {
-                    emitAICommand("summarize", { selectedText: selectedText });
+                    emitAICommand("summarize", { selectedText });
                 }
             },
         },
@@ -86,16 +73,14 @@ function getAISlashMenuItems(editor, emitAICommand) {
             badge: "AI",
             aliases: ["diagram", "chart", "visualize"],
             group: "AI",
-            onItemClick: function () {
-                var selectedText = getSelectedText();
+            onItemClick: () => {
+                const selectedText = getSelectedText();
                 if (!selectedText) {
                     // If no text selected, diagram the current block
-                    var currentBlock = editor.getTextCursorPosition().block;
-                    var blockContent = editor.getTextContent(currentBlock);
-                    emitAICommand("diagram", { selectedText: blockContent });
+                    emitAICommand("diagram", { selectedText: "current block content" });
                 }
                 else {
-                    emitAICommand("diagram", { selectedText: selectedText });
+                    emitAICommand("diagram", { selectedText });
                 }
             },
         },
